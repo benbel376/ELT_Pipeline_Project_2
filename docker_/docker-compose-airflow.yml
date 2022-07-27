@@ -1,0 +1,35 @@
+version: '3.7'
+
+# x-redash-service: &redash-service
+#   image: redash/redash:latest
+#   links:
+#     - mysql:mysql
+#   depends_on:
+#     - postgres
+#     - redis
+#   env_file: redash.env
+#   restart: always
+
+services:
+
+  airflow:
+    build: ./dockerfiles/airflow
+    restart: always
+    environment:
+      - INSTALL_MYSQL=y
+      - LOAD_EX=n
+      - EXECUTOR=Local
+      - AIRFLOW_DATABASE_URL=postgresql://airflow:airflow@postgres/airflow
+    volumes:
+      - ../airflow_/dags:/usr/local/airflow/dags
+      - ../scripts/python:/usr/local/airflow/includes
+      - ../airflow_/logs:/opt/airflow/logs
+      - ../airflow_/plugins:/opt/airflow/plugins
+    ports:
+      - "8080:8080"
+    command: webserver
+
+networks: 
+  default: 
+    external: 
+      name: local_network_1
