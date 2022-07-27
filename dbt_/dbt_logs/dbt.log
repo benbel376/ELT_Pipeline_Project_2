@@ -1,0 +1,2553 @@
+
+
+============================== 2022-07-27 21:07:37.125502 | c753ce90-4226-408f-8e2c-36a54a109654 ==============================
+[0m21:07:37.125612 [info ] [MainThread]: Running with dbt=1.2.0
+[0m21:07:37.133440 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/bini/10_acad/week_12/ELT_Pipeline_Project_2/dbt_/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:07:37.134558 [debug] [MainThread]: Tracking: tracking
+[0m21:07:37.321875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6b694f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6b695e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6b695b0>]}
+[0m21:07:37.460974 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m21:07:37.462984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6b7e760>]}
+[0m21:07:37.527585 [debug] [MainThread]: Parsing macros/relations.sql
+[0m21:07:37.543261 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m21:07:37.695602 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m21:07:37.704743 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+[0m21:07:37.712354 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m21:07:37.714921 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m21:07:37.720765 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m21:07:37.723980 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m21:07:37.729198 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m21:07:37.755901 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m21:07:37.762606 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m21:07:37.773383 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m21:07:37.791589 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m21:07:37.799439 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m21:07:37.853495 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m21:07:38.016788 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m21:07:38.118960 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m21:07:38.207479 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m21:07:38.381032 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m21:07:38.459703 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m21:07:38.503415 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m21:07:38.643316 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m21:07:38.747925 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m21:07:38.754874 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m21:07:38.769674 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m21:07:38.815611 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m21:07:38.831205 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m21:07:38.841413 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m21:07:38.905499 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m21:07:38.950159 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m21:07:38.982008 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m21:07:39.065959 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m21:07:39.109511 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m21:07:39.118655 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m21:07:39.134203 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m21:07:39.155926 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m21:07:39.179953 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m21:07:39.302678 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m21:07:39.370175 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m21:07:39.430497 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m21:07:39.473669 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m21:07:39.598146 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m21:07:39.622897 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m21:07:39.635905 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m21:07:39.657251 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m21:07:39.665171 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m21:07:39.676900 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m21:07:39.688048 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m21:07:39.695171 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m21:07:39.712345 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m21:07:39.726774 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m21:07:39.745963 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m21:07:39.781097 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m21:07:39.785554 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m21:07:39.811219 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m21:07:39.817874 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m21:07:39.832006 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m21:07:39.846837 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m21:07:39.937438 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m21:07:39.953695 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m21:07:39.973536 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m21:07:39.989986 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m21:07:40.020142 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m21:07:40.047142 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m21:07:40.065701 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m21:07:40.074993 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m21:07:40.140629 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m21:07:40.249404 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m21:07:40.269520 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m21:07:40.298706 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m21:07:40.316054 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m21:07:42.789841 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m21:07:42.945704 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m21:07:42.972925 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/dim_types.sql
+[0m21:07:43.001028 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_summary.sql
+[0m21:07:43.017967 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_trajectory.sql
+[0m21:07:43.488917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6a9eee0>]}
+[0m21:07:43.516397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6619a30>]}
+[0m21:07:43.517794 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:07:43.519899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6a26fd0>]}
+[0m21:07:43.526597 [info ] [MainThread]: 
+[0m21:07:43.529093 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:07:43.534439 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse"
+[0m21:07:43.596812 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m21:07:43.597741 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:07:43.598476 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:07:43.620927 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.02 seconds
+[0m21:07:43.626854 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:07:43.649010 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse_warehouse"
+[0m21:07:43.711653 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:07:43.712799 [debug] [ThreadPool]: On list_warehouse_warehouse: BEGIN
+[0m21:07:43.713697 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:07:43.726782 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m21:07:43.729289 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:07:43.730189 [debug] [ThreadPool]: On list_warehouse_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse_warehouse"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m21:07:43.757106 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.03 seconds
+[0m21:07:43.765747 [debug] [ThreadPool]: On list_warehouse_warehouse: ROLLBACK
+[0m21:07:43.772362 [debug] [ThreadPool]: On list_warehouse_warehouse: Close
+[0m21:07:43.790453 [debug] [MainThread]: Using postgres connection "master"
+[0m21:07:43.791379 [debug] [MainThread]: On master: BEGIN
+[0m21:07:43.797666 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:07:43.813454 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+[0m21:07:43.815368 [debug] [MainThread]: Using postgres connection "master"
+[0m21:07:43.816748 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:07:43.853589 [debug] [MainThread]: SQL status: SELECT 1 in 0.03 seconds
+[0m21:07:43.867461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6a9ed00>]}
+[0m21:07:43.872833 [debug] [MainThread]: On master: ROLLBACK
+[0m21:07:43.874456 [debug] [MainThread]: Using postgres connection "master"
+[0m21:07:43.875381 [debug] [MainThread]: On master: BEGIN
+[0m21:07:43.884905 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:07:43.886641 [debug] [MainThread]: On master: COMMIT
+[0m21:07:43.892079 [debug] [MainThread]: Using postgres connection "master"
+[0m21:07:43.893849 [debug] [MainThread]: On master: COMMIT
+[0m21:07:43.899499 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:07:43.906314 [debug] [MainThread]: On master: Close
+[0m21:07:43.917659 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:07:43.919299 [info ] [MainThread]: 
+[0m21:07:43.968515 [debug] [Thread-1  ]: Began running node model.dbt_.dim_types
+[0m21:07:43.969906 [info ] [Thread-1  ]: 1 of 5 START table model warehouse.dim_types ................................... [RUN]
+[0m21:07:43.974976 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.dim_types"
+[0m21:07:43.975920 [debug] [Thread-1  ]: Began compiling node model.dbt_.dim_types
+[0m21:07:43.976853 [debug] [Thread-1  ]: Compiling model.dbt_.dim_types
+[0m21:07:43.989039 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.dim_types"
+[0m21:07:43.990884 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:07:43.991899 [debug] [Thread-1  ]: Began executing node model.dbt_.dim_types
+[0m21:07:44.360302 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.dim_types"
+[0m21:07:44.366988 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:07:44.367928 [debug] [Thread-1  ]: On model.dbt_.dim_types: BEGIN
+[0m21:07:44.368834 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:07:44.383186 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+[0m21:07:44.384649 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:07:44.385768 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+
+
+  create  table "warehouse"."warehouse"."dim_types__dbt_tmp"
+  as (
+    
+with source_data as (
+    select * from "warehouse"."warehouse"."source"
+),
+
+final as (
+    SELECT distinct
+    md5(types) as Id,
+    types FROM source_data
+)
+
+select * from final
+  );
+[0m21:07:44.408225 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "warehouse.source" does not exist
+LINE 8:     select * from "warehouse"."warehouse"."source"
+                          ^
+
+[0m21:07:44.409251 [debug] [Thread-1  ]: On model.dbt_.dim_types: ROLLBACK
+[0m21:07:44.411395 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:07:44.412458 [debug] [Thread-1  ]: On model.dbt_.dim_types: Close
+[0m21:07:44.414413 [debug] [Thread-1  ]: Database Error in model dim_types (models/traffic_models/dim_types.sql)
+  relation "warehouse.source" does not exist
+  LINE 8:     select * from "warehouse"."warehouse"."source"
+                            ^
+  compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:07:44.415711 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff44ce910>]}
+[0m21:07:44.423606 [error] [Thread-1  ]: 1 of 5 ERROR creating table model warehouse.dim_types .......................... [[31mERROR[0m in 0.44s]
+[0m21:07:44.434923 [debug] [Thread-1  ]: Finished running node model.dbt_.dim_types
+[0m21:07:44.436070 [debug] [Thread-1  ]: Began running node model.dbt_.my_first_dbt_model
+[0m21:07:44.444036 [info ] [Thread-1  ]: 2 of 5 START table model warehouse.my_first_dbt_model .......................... [RUN]
+[0m21:07:44.450951 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:07:44.451891 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_first_dbt_model
+[0m21:07:44.461019 [debug] [Thread-1  ]: Compiling model.dbt_.my_first_dbt_model
+[0m21:07:44.486059 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:07:44.487577 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:07:44.497355 [debug] [Thread-1  ]: Began executing node model.dbt_.my_first_dbt_model
+[0m21:07:44.543609 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:07:44.561434 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:07:44.566882 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: BEGIN
+[0m21:07:44.567656 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:07:44.587775 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:07:44.588842 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:07:44.589588 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+
+
+  create  table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+[0m21:07:44.595609 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.0 seconds
+[0m21:07:44.679904 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:07:44.692861 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m21:07:44.695142 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:07:44.762432 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:07:44.763329 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m21:07:44.781549 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.02 seconds
+[0m21:07:45.211528 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:07:45.218537 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:07:45.228422 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:07:45.245909 [debug] [Thread-1  ]: SQL status: COMMIT in 0.02 seconds
+[0m21:07:45.280322 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:07:45.281410 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+drop table if exists "warehouse"."warehouse"."my_first_dbt_model__dbt_backup" cascade
+[0m21:07:45.302072 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.02 seconds
+[0m21:07:45.305997 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:07:45.307053 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: Close
+[0m21:07:45.320343 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff65928b0>]}
+[0m21:07:45.321984 [info ] [Thread-1  ]: 2 of 5 OK created table model warehouse.my_first_dbt_model ..................... [[32mSELECT 2[0m in 0.87s]
+[0m21:07:45.336723 [debug] [Thread-1  ]: Finished running node model.dbt_.my_first_dbt_model
+[0m21:07:45.337996 [debug] [Thread-1  ]: Began running node model.dbt_.fct_summary
+[0m21:07:45.345320 [info ] [Thread-1  ]: 3 of 5 SKIP relation warehouse.fct_summary ..................................... [[33mSKIP[0m]
+[0m21:07:45.353047 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_summary
+[0m21:07:45.358689 [debug] [Thread-1  ]: Began running node model.dbt_.fct_trajectory
+[0m21:07:45.372331 [info ] [Thread-1  ]: 4 of 5 SKIP relation warehouse.fct_trajectory .................................. [[33mSKIP[0m]
+[0m21:07:45.375525 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_trajectory
+[0m21:07:45.380528 [debug] [Thread-1  ]: Began running node model.dbt_.my_second_dbt_model
+[0m21:07:45.385990 [info ] [Thread-1  ]: 5 of 5 START view model warehouse.my_second_dbt_model .......................... [RUN]
+[0m21:07:45.390165 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:07:45.391161 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_second_dbt_model
+[0m21:07:45.397286 [debug] [Thread-1  ]: Compiling model.dbt_.my_second_dbt_model
+[0m21:07:45.438242 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:07:45.445511 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:07:45.446640 [debug] [Thread-1  ]: Began executing node model.dbt_.my_second_dbt_model
+[0m21:07:45.671627 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:07:45.677851 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:07:45.678848 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: BEGIN
+[0m21:07:45.681322 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:07:45.696420 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:07:45.697384 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:07:45.698175 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+
+  create view "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "warehouse"."warehouse"."my_first_dbt_model"
+where id = 1
+  );
+[0m21:07:45.706028 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+[0m21:07:45.718274 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:07:45.719178 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+alter table "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m21:07:45.731888 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:07:45.755824 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:07:45.756807 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:07:45.757658 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:07:45.778728 [debug] [Thread-1  ]: SQL status: COMMIT in 0.02 seconds
+[0m21:07:45.799449 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:07:45.800625 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+drop view if exists "warehouse"."warehouse"."my_second_dbt_model__dbt_backup" cascade
+[0m21:07:45.809268 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m21:07:45.818271 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:07:45.824318 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: Close
+[0m21:07:45.829411 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c753ce90-4226-408f-8e2c-36a54a109654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff44ced60>]}
+[0m21:07:45.836666 [info ] [Thread-1  ]: 5 of 5 OK created view model warehouse.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 0.44s]
+[0m21:07:45.841517 [debug] [Thread-1  ]: Finished running node model.dbt_.my_second_dbt_model
+[0m21:07:45.863284 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:07:45.864955 [debug] [MainThread]: Using postgres connection "master"
+[0m21:07:45.866194 [debug] [MainThread]: On master: BEGIN
+[0m21:07:45.867069 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:07:45.882766 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+[0m21:07:45.884097 [debug] [MainThread]: On master: COMMIT
+[0m21:07:45.888119 [debug] [MainThread]: Using postgres connection "master"
+[0m21:07:45.892204 [debug] [MainThread]: On master: COMMIT
+[0m21:07:45.901053 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:07:45.908327 [debug] [MainThread]: On master: Close
+[0m21:07:45.916110 [info ] [MainThread]: 
+[0m21:07:45.917876 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 2.39 seconds (2.39s).
+[0m21:07:45.924605 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:07:45.931959 [debug] [MainThread]: Connection 'list_warehouse' was properly closed.
+[0m21:07:45.932887 [debug] [MainThread]: Connection 'model.dbt_.my_second_dbt_model' was properly closed.
+[0m21:07:46.022111 [info ] [MainThread]: 
+[0m21:07:46.026239 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:07:46.053084 [info ] [MainThread]: 
+[0m21:07:46.059244 [error] [MainThread]: [33mDatabase Error in model dim_types (models/traffic_models/dim_types.sql)[0m
+[0m21:07:46.069292 [error] [MainThread]:   relation "warehouse.source" does not exist
+[0m21:07:46.078576 [error] [MainThread]:   LINE 8:     select * from "warehouse"."warehouse"."source"
+[0m21:07:46.086814 [error] [MainThread]:                             ^
+[0m21:07:46.090253 [error] [MainThread]:   compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:07:46.102003 [info ] [MainThread]: 
+[0m21:07:46.145309 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m21:07:46.162754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff658bf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff6b7e6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ff44ced60>]}
+
+
+============================== 2022-07-27 21:12:17.533748 | c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c ==============================
+[0m21:12:17.533882 [info ] [MainThread]: Running with dbt=1.2.0
+[0m21:12:17.552806 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/bini/10_acad/week_12/ELT_Pipeline_Project_2/dbt_/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:12:17.560519 [debug] [MainThread]: Tracking: tracking
+[0m21:12:17.801662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016cb0520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016cb0610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016cb05e0>]}
+[0m21:12:18.011181 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m21:12:18.013120 [debug] [MainThread]: Partial parsing: added file: dbt_://models/traffic_models/schema.yml
+[0m21:12:18.024887 [debug] [MainThread]: Partial parsing: deleted source source.dbt_.traffic_source.source
+[0m21:12:18.095307 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_summary.sql
+[0m21:12:18.157689 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_trajectory.sql
+[0m21:12:18.198725 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/dim_types.sql
+[0m21:12:18.334661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016722eb0>]}
+[0m21:12:18.366246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016c29b50>]}
+[0m21:12:18.367794 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:12:18.370384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016b9a100>]}
+[0m21:12:18.378231 [info ] [MainThread]: 
+[0m21:12:18.382145 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:12:18.389848 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse"
+[0m21:12:18.445581 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m21:12:18.446700 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:12:18.448366 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:12:18.474407 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.03 seconds
+[0m21:12:18.479491 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:12:18.503716 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse_warehouse"
+[0m21:12:18.609026 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:12:18.616062 [debug] [ThreadPool]: On list_warehouse_warehouse: BEGIN
+[0m21:12:18.628125 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:12:18.670636 [debug] [ThreadPool]: SQL status: BEGIN in 0.04 seconds
+[0m21:12:18.671591 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:12:18.672660 [debug] [ThreadPool]: On list_warehouse_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse_warehouse"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m21:12:18.683510 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:12:18.706182 [debug] [ThreadPool]: On list_warehouse_warehouse: ROLLBACK
+[0m21:12:18.713017 [debug] [ThreadPool]: On list_warehouse_warehouse: Close
+[0m21:12:18.743676 [debug] [MainThread]: Using postgres connection "master"
+[0m21:12:18.750703 [debug] [MainThread]: On master: BEGIN
+[0m21:12:18.751450 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:12:18.782191 [debug] [MainThread]: SQL status: BEGIN in 0.03 seconds
+[0m21:12:18.785241 [debug] [MainThread]: Using postgres connection "master"
+[0m21:12:18.789834 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:12:18.835736 [debug] [MainThread]: SQL status: SELECT 1 in 0.04 seconds
+[0m21:12:18.840005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016b67e80>]}
+[0m21:12:18.841331 [debug] [MainThread]: On master: ROLLBACK
+[0m21:12:18.850754 [debug] [MainThread]: Using postgres connection "master"
+[0m21:12:18.851702 [debug] [MainThread]: On master: BEGIN
+[0m21:12:18.867628 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+[0m21:12:18.869156 [debug] [MainThread]: On master: COMMIT
+[0m21:12:18.874725 [debug] [MainThread]: Using postgres connection "master"
+[0m21:12:18.883465 [debug] [MainThread]: On master: COMMIT
+[0m21:12:18.891721 [debug] [MainThread]: SQL status: COMMIT in 0.01 seconds
+[0m21:12:18.892796 [debug] [MainThread]: On master: Close
+[0m21:12:18.894788 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:12:18.898149 [info ] [MainThread]: 
+[0m21:12:18.950762 [debug] [Thread-1  ]: Began running node model.dbt_.dim_types
+[0m21:12:18.952075 [info ] [Thread-1  ]: 1 of 5 START table model warehouse.dim_types ................................... [RUN]
+[0m21:12:18.955627 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.dim_types"
+[0m21:12:18.956668 [debug] [Thread-1  ]: Began compiling node model.dbt_.dim_types
+[0m21:12:18.957540 [debug] [Thread-1  ]: Compiling model.dbt_.dim_types
+[0m21:12:18.985039 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.dim_types"
+[0m21:12:18.990134 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:12:18.992315 [debug] [Thread-1  ]: Began executing node model.dbt_.dim_types
+[0m21:12:19.273980 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.dim_types"
+[0m21:12:19.275996 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:12:19.277196 [debug] [Thread-1  ]: On model.dbt_.dim_types: BEGIN
+[0m21:12:19.278081 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:12:19.295095 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:12:19.296055 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:12:19.297103 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+
+
+  create  table "warehouse"."warehouse"."dim_types__dbt_tmp"
+  as (
+    
+with source_data as (
+    select * from "warehouse"."warehouse"."source"
+),
+
+final as (
+    SELECT distinct
+    md5(types) as Id,
+    types FROM source_data
+)
+
+select * from final
+  );
+[0m21:12:19.300401 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "warehouse.source" does not exist
+LINE 8:     select * from "warehouse"."warehouse"."source"
+                          ^
+
+[0m21:12:19.302023 [debug] [Thread-1  ]: On model.dbt_.dim_types: ROLLBACK
+[0m21:12:19.309457 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:12:19.310959 [debug] [Thread-1  ]: On model.dbt_.dim_types: Close
+[0m21:12:19.317565 [debug] [Thread-1  ]: Database Error in model dim_types (models/traffic_models/dim_types.sql)
+  relation "warehouse.source" does not exist
+  LINE 8:     select * from "warehouse"."warehouse"."source"
+                            ^
+  compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:12:19.320007 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff014634490>]}
+[0m21:12:19.324315 [error] [Thread-1  ]: 1 of 5 ERROR creating table model warehouse.dim_types .......................... [[31mERROR[0m in 0.37s]
+[0m21:12:19.329999 [debug] [Thread-1  ]: Finished running node model.dbt_.dim_types
+[0m21:12:19.334064 [debug] [Thread-1  ]: Began running node model.dbt_.my_first_dbt_model
+[0m21:12:19.337859 [info ] [Thread-1  ]: 2 of 5 START table model warehouse.my_first_dbt_model .......................... [RUN]
+[0m21:12:19.346507 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:12:19.350385 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_first_dbt_model
+[0m21:12:19.351629 [debug] [Thread-1  ]: Compiling model.dbt_.my_first_dbt_model
+[0m21:12:19.387827 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:12:19.397331 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:12:19.398294 [debug] [Thread-1  ]: Began executing node model.dbt_.my_first_dbt_model
+[0m21:12:19.422842 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:12:19.425687 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:12:19.426606 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: BEGIN
+[0m21:12:19.427310 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:12:19.445859 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:12:19.449003 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:12:19.451479 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+
+
+  create  table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+[0m21:12:19.458600 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:12:19.515315 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:12:19.516474 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m21:12:19.519163 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:12:19.545612 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:12:19.550819 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m21:12:19.554039 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:12:19.692905 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:12:19.693847 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:12:19.694570 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:12:19.722038 [debug] [Thread-1  ]: SQL status: COMMIT in 0.03 seconds
+[0m21:12:19.785405 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:12:19.786338 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+drop table if exists "warehouse"."warehouse"."my_first_dbt_model__dbt_backup" cascade
+[0m21:12:19.811969 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.02 seconds
+[0m21:12:19.815776 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:12:19.816862 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: Close
+[0m21:12:19.818934 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0166c47f0>]}
+[0m21:12:19.820532 [info ] [Thread-1  ]: 2 of 5 OK created table model warehouse.my_first_dbt_model ..................... [[32mSELECT 2[0m in 0.47s]
+[0m21:12:19.831942 [debug] [Thread-1  ]: Finished running node model.dbt_.my_first_dbt_model
+[0m21:12:19.835264 [debug] [Thread-1  ]: Began running node model.dbt_.fct_summary
+[0m21:12:19.839605 [info ] [Thread-1  ]: 3 of 5 SKIP relation warehouse.fct_summary ..................................... [[33mSKIP[0m]
+[0m21:12:19.842758 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_summary
+[0m21:12:19.844260 [debug] [Thread-1  ]: Began running node model.dbt_.fct_trajectory
+[0m21:12:19.845574 [info ] [Thread-1  ]: 4 of 5 SKIP relation warehouse.fct_trajectory .................................. [[33mSKIP[0m]
+[0m21:12:19.847975 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_trajectory
+[0m21:12:19.849860 [debug] [Thread-1  ]: Began running node model.dbt_.my_second_dbt_model
+[0m21:12:19.851389 [info ] [Thread-1  ]: 5 of 5 START view model warehouse.my_second_dbt_model .......................... [RUN]
+[0m21:12:19.854732 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:12:19.856040 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_second_dbt_model
+[0m21:12:19.858128 [debug] [Thread-1  ]: Compiling model.dbt_.my_second_dbt_model
+[0m21:12:19.867247 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:12:19.869269 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:12:19.870438 [debug] [Thread-1  ]: Began executing node model.dbt_.my_second_dbt_model
+[0m21:12:20.142009 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:12:20.143641 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:12:20.144584 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: BEGIN
+[0m21:12:20.152237 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:12:20.171412 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:12:20.174068 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:12:20.177398 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+
+  create view "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "warehouse"."warehouse"."my_first_dbt_model"
+where id = 1
+  );
+[0m21:12:20.185599 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+[0m21:12:20.195739 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:12:20.196759 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+alter table "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m21:12:20.199554 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:12:20.206233 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:12:20.207408 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:12:20.208190 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:12:20.243881 [debug] [Thread-1  ]: SQL status: COMMIT in 0.03 seconds
+[0m21:12:20.251177 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:12:20.252449 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+drop view if exists "warehouse"."warehouse"."my_second_dbt_model__dbt_backup" cascade
+[0m21:12:20.255517 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m21:12:20.264495 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:12:20.265488 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: Close
+[0m21:12:20.275699 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1d32072-0ca2-44c9-8e1a-4ef7bbd1fa8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff01565c490>]}
+[0m21:12:20.277235 [info ] [Thread-1  ]: 5 of 5 OK created view model warehouse.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 0.42s]
+[0m21:12:20.285613 [debug] [Thread-1  ]: Finished running node model.dbt_.my_second_dbt_model
+[0m21:12:20.290628 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:12:20.292598 [debug] [MainThread]: Using postgres connection "master"
+[0m21:12:20.293585 [debug] [MainThread]: On master: BEGIN
+[0m21:12:20.294376 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:12:20.353270 [debug] [MainThread]: SQL status: BEGIN in 0.06 seconds
+[0m21:12:20.354829 [debug] [MainThread]: On master: COMMIT
+[0m21:12:20.358535 [debug] [MainThread]: Using postgres connection "master"
+[0m21:12:20.359580 [debug] [MainThread]: On master: COMMIT
+[0m21:12:20.361368 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:12:20.362347 [debug] [MainThread]: On master: Close
+[0m21:12:20.371104 [info ] [MainThread]: 
+[0m21:12:20.374203 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 1.99 seconds (1.99s).
+[0m21:12:20.377134 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:12:20.378082 [debug] [MainThread]: Connection 'list_warehouse' was properly closed.
+[0m21:12:20.382686 [debug] [MainThread]: Connection 'model.dbt_.my_second_dbt_model' was properly closed.
+[0m21:12:20.413589 [info ] [MainThread]: 
+[0m21:12:20.416482 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:12:20.419449 [info ] [MainThread]: 
+[0m21:12:20.422847 [error] [MainThread]: [33mDatabase Error in model dim_types (models/traffic_models/dim_types.sql)[0m
+[0m21:12:20.426274 [error] [MainThread]:   relation "warehouse.source" does not exist
+[0m21:12:20.429625 [error] [MainThread]:   LINE 8:     select * from "warehouse"."warehouse"."source"
+[0m21:12:20.432445 [error] [MainThread]:                             ^
+[0m21:12:20.434275 [error] [MainThread]:   compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:12:20.438661 [info ] [MainThread]: 
+[0m21:12:20.442458 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m21:12:20.445594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff016b79dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff01458cb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff01458c610>]}
+
+
+============================== 2022-07-27 21:13:01.384874 | 660e18c5-7fc5-4858-8f8b-9220ee6122f7 ==============================
+[0m21:13:01.385003 [info ] [MainThread]: Running with dbt=1.2.0
+[0m21:13:01.393056 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/bini/10_acad/week_12/ELT_Pipeline_Project_2/dbt_/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:13:01.396114 [debug] [MainThread]: Tracking: tracking
+[0m21:13:01.624382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c09c684c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c09c685b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c09c68580>]}
+[0m21:13:02.015334 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:13:02.023880 [debug] [MainThread]: Partial parsing: deleted source source.dbt_.traffic_source.source
+[0m21:13:02.031148 [debug] [MainThread]: Partial parsing: update schema file: dbt_://models/traffic_models/schema.yml
+[0m21:13:02.172837 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_summary.sql
+[0m21:13:02.281852 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_trajectory.sql
+[0m21:13:02.294446 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/dim_types.sql
+[0m21:13:02.445020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '660e18c5-7fc5-4858-8f8b-9220ee6122f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c096dbd60>]}
+[0m21:13:02.505326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '660e18c5-7fc5-4858-8f8b-9220ee6122f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c096a87f0>]}
+[0m21:13:02.506716 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:13:02.516754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '660e18c5-7fc5-4858-8f8b-9220ee6122f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c09b4cf70>]}
+[0m21:13:02.541888 [info ] [MainThread]: 
+[0m21:13:02.548473 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:13:02.585475 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse"
+[0m21:13:02.752009 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m21:13:02.754800 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:13:02.757765 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:13:02.792066 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.03 seconds
+[0m21:13:02.798437 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:13:02.810291 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse_warehouse"
+[0m21:13:02.869363 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:13:02.870266 [debug] [ThreadPool]: On list_warehouse_warehouse: BEGIN
+[0m21:13:02.872469 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:13:02.896735 [debug] [ThreadPool]: SQL status: BEGIN in 0.02 seconds
+[0m21:13:02.897687 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:13:02.900290 [debug] [ThreadPool]: On list_warehouse_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse_warehouse"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m21:13:02.910053 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:13:02.914147 [debug] [ThreadPool]: On list_warehouse_warehouse: ROLLBACK
+[0m21:13:02.916526 [debug] [ThreadPool]: On list_warehouse_warehouse: Close
+[0m21:13:02.943611 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:02.948037 [debug] [MainThread]: On master: BEGIN
+[0m21:13:02.950610 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:13:02.972921 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+[0m21:13:02.973868 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:02.974605 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:13:03.025240 [debug] [MainThread]: SQL status: SELECT 1 in 0.05 seconds
+[0m21:13:03.030443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '660e18c5-7fc5-4858-8f8b-9220ee6122f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c09aec9a0>]}
+[0m21:13:03.031737 [debug] [MainThread]: On master: ROLLBACK
+[0m21:13:03.037414 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:03.039261 [debug] [MainThread]: On master: BEGIN
+[0m21:13:03.050257 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:13:03.053128 [debug] [MainThread]: On master: COMMIT
+[0m21:13:03.054002 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:03.054707 [debug] [MainThread]: On master: COMMIT
+[0m21:13:03.063499 [debug] [MainThread]: SQL status: COMMIT in 0.01 seconds
+[0m21:13:03.065957 [debug] [MainThread]: On master: Close
+[0m21:13:03.075030 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:13:03.096822 [info ] [MainThread]: 
+[0m21:13:03.130486 [debug] [Thread-1  ]: Began running node model.dbt_.dim_types
+[0m21:13:03.131780 [info ] [Thread-1  ]: 1 of 5 START table model warehouse.dim_types ................................... [RUN]
+[0m21:13:03.137167 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.dim_types"
+[0m21:13:03.138371 [debug] [Thread-1  ]: Began compiling node model.dbt_.dim_types
+[0m21:13:03.139254 [debug] [Thread-1  ]: Compiling model.dbt_.dim_types
+[0m21:13:03.151564 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.dim_types"
+[0m21:13:03.153201 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:13:03.154799 [debug] [Thread-1  ]: Began executing node model.dbt_.dim_types
+[0m21:13:03.514738 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.dim_types"
+[0m21:13:03.519432 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:13:03.523092 [debug] [Thread-1  ]: On model.dbt_.dim_types: BEGIN
+[0m21:13:03.524120 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:13:03.542654 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:13:03.545078 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:13:03.546280 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+
+
+  create  table "warehouse"."warehouse"."dim_types__dbt_tmp"
+  as (
+    
+with source_data as (
+    select * from "warehouse"."traffic_source"."source"
+),
+
+final as (
+    SELECT distinct
+    md5(types) as Id,
+    types FROM source_data
+)
+
+select * from final
+  );
+[0m21:13:03.549749 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "traffic_source.source" does not exist
+LINE 8:     select * from "warehouse"."traffic_source"."source"
+                          ^
+
+[0m21:13:03.557473 [debug] [Thread-1  ]: On model.dbt_.dim_types: ROLLBACK
+[0m21:13:03.562969 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:13:03.564125 [debug] [Thread-1  ]: On model.dbt_.dim_types: Close
+[0m21:13:03.566021 [debug] [Thread-1  ]: Database Error in model dim_types (models/traffic_models/dim_types.sql)
+  relation "traffic_source.source" does not exist
+  LINE 8:     select * from "warehouse"."traffic_source"."source"
+                            ^
+  compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:13:03.578873 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '660e18c5-7fc5-4858-8f8b-9220ee6122f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c085e2e20>]}
+[0m21:13:03.585107 [error] [Thread-1  ]: 1 of 5 ERROR creating table model warehouse.dim_types .......................... [[31mERROR[0m in 0.44s]
+[0m21:13:03.596421 [debug] [Thread-1  ]: Finished running node model.dbt_.dim_types
+[0m21:13:03.601889 [debug] [Thread-1  ]: Began running node model.dbt_.my_first_dbt_model
+[0m21:13:03.605585 [info ] [Thread-1  ]: 2 of 5 START table model warehouse.my_first_dbt_model .......................... [RUN]
+[0m21:13:03.613610 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:13:03.624350 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_first_dbt_model
+[0m21:13:03.626319 [debug] [Thread-1  ]: Compiling model.dbt_.my_first_dbt_model
+[0m21:13:03.651626 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:13:03.658885 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:13:03.661739 [debug] [Thread-1  ]: Began executing node model.dbt_.my_first_dbt_model
+[0m21:13:03.703769 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:13:03.714299 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:13:03.717816 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: BEGIN
+[0m21:13:03.718937 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:13:03.751296 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m21:13:03.753677 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:13:03.755123 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+
+
+  create  table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+[0m21:13:03.761567 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:13:03.817946 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:13:03.824443 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m21:13:03.826729 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:13:03.851813 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:13:03.855471 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m21:13:03.861909 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:13:04.242211 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:13:04.243146 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:13:04.264584 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:13:04.283383 [debug] [Thread-1  ]: SQL status: COMMIT in 0.02 seconds
+[0m21:13:04.335963 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:13:04.337606 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+drop table if exists "warehouse"."warehouse"."my_first_dbt_model__dbt_backup" cascade
+[0m21:13:04.361378 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.02 seconds
+[0m21:13:04.365309 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:13:04.366301 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: Close
+[0m21:13:04.373799 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '660e18c5-7fc5-4858-8f8b-9220ee6122f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c085e2700>]}
+[0m21:13:04.375331 [info ] [Thread-1  ]: 2 of 5 OK created table model warehouse.my_first_dbt_model ..................... [[32mSELECT 2[0m in 0.76s]
+[0m21:13:04.397113 [debug] [Thread-1  ]: Finished running node model.dbt_.my_first_dbt_model
+[0m21:13:04.400971 [debug] [Thread-1  ]: Began running node model.dbt_.fct_summary
+[0m21:13:04.402912 [info ] [Thread-1  ]: 3 of 5 SKIP relation warehouse.fct_summary ..................................... [[33mSKIP[0m]
+[0m21:13:04.417865 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_summary
+[0m21:13:04.419340 [debug] [Thread-1  ]: Began running node model.dbt_.fct_trajectory
+[0m21:13:04.422628 [info ] [Thread-1  ]: 4 of 5 SKIP relation warehouse.fct_trajectory .................................. [[33mSKIP[0m]
+[0m21:13:04.462873 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_trajectory
+[0m21:13:04.464875 [debug] [Thread-1  ]: Began running node model.dbt_.my_second_dbt_model
+[0m21:13:04.467561 [info ] [Thread-1  ]: 5 of 5 START view model warehouse.my_second_dbt_model .......................... [RUN]
+[0m21:13:04.476379 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:13:04.478651 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_second_dbt_model
+[0m21:13:04.480003 [debug] [Thread-1  ]: Compiling model.dbt_.my_second_dbt_model
+[0m21:13:04.490141 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:13:04.491966 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:13:04.493972 [debug] [Thread-1  ]: Began executing node model.dbt_.my_second_dbt_model
+[0m21:13:04.661896 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:13:04.671454 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:13:04.672965 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: BEGIN
+[0m21:13:04.674679 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:13:04.698317 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:13:04.702685 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:13:04.709071 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+
+  create view "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "warehouse"."warehouse"."my_first_dbt_model"
+where id = 1
+  );
+[0m21:13:04.717738 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+[0m21:13:04.729245 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:13:04.730834 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+alter table "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m21:13:04.733323 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:13:04.740991 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:13:04.742072 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:13:04.745391 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:13:04.760404 [debug] [Thread-1  ]: SQL status: COMMIT in 0.01 seconds
+[0m21:13:04.775682 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:13:04.788632 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+drop view if exists "warehouse"."warehouse"."my_second_dbt_model__dbt_backup" cascade
+[0m21:13:04.791030 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m21:13:04.796056 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:13:04.797328 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: Close
+[0m21:13:04.808546 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '660e18c5-7fc5-4858-8f8b-9220ee6122f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c086153d0>]}
+[0m21:13:04.813636 [info ] [Thread-1  ]: 5 of 5 OK created view model warehouse.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 0.33s]
+[0m21:13:04.823188 [debug] [Thread-1  ]: Finished running node model.dbt_.my_second_dbt_model
+[0m21:13:04.829338 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:13:04.830881 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:04.832424 [debug] [MainThread]: On master: BEGIN
+[0m21:13:04.834033 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:13:04.878083 [debug] [MainThread]: SQL status: BEGIN in 0.04 seconds
+[0m21:13:04.880643 [debug] [MainThread]: On master: COMMIT
+[0m21:13:04.881419 [debug] [MainThread]: Using postgres connection "master"
+[0m21:13:04.882110 [debug] [MainThread]: On master: COMMIT
+[0m21:13:04.884557 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:13:04.885928 [debug] [MainThread]: On master: Close
+[0m21:13:04.893426 [info ] [MainThread]: 
+[0m21:13:04.903784 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 2.35 seconds (2.35s).
+[0m21:13:04.909047 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:13:04.909864 [debug] [MainThread]: Connection 'list_warehouse' was properly closed.
+[0m21:13:04.912811 [debug] [MainThread]: Connection 'model.dbt_.my_second_dbt_model' was properly closed.
+[0m21:13:05.008576 [info ] [MainThread]: 
+[0m21:13:05.010688 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:13:05.020793 [info ] [MainThread]: 
+[0m21:13:05.023205 [error] [MainThread]: [33mDatabase Error in model dim_types (models/traffic_models/dim_types.sql)[0m
+[0m21:13:05.027019 [error] [MainThread]:   relation "traffic_source.source" does not exist
+[0m21:13:05.032420 [error] [MainThread]:   LINE 8:     select * from "warehouse"."traffic_source"."source"
+[0m21:13:05.043423 [error] [MainThread]:                             ^
+[0m21:13:05.045035 [error] [MainThread]:   compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:13:05.057606 [info ] [MainThread]: 
+[0m21:13:05.066359 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m21:13:05.074371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c09b30d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c08546d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1c08546a90>]}
+
+
+============================== 2022-07-27 21:17:00.008397 | 3a2f7873-0cba-4436-946e-fc7cedcbf49b ==============================
+[0m21:17:00.008536 [info ] [MainThread]: Running with dbt=1.2.0
+[0m21:17:00.018206 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/bini/10_acad/week_12/ELT_Pipeline_Project_2/dbt_/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:17:00.024426 [debug] [MainThread]: Tracking: tracking
+[0m21:17:00.247309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05ee4d5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05ee4d6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05ee4d670>]}
+[0m21:17:00.587397 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:17:00.596495 [debug] [MainThread]: Partial parsing: deleted source source.dbt_.traffic_source.source
+[0m21:17:00.599331 [debug] [MainThread]: Partial parsing: update schema file: dbt_://models/traffic_models/schema.yml
+[0m21:17:00.755666 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_summary.sql
+[0m21:17:00.815128 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_trajectory.sql
+[0m21:17:00.828140 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/dim_types.sql
+[0m21:17:00.937691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3a2f7873-0cba-4436-946e-fc7cedcbf49b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05e8bf070>]}
+[0m21:17:00.967682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a2f7873-0cba-4436-946e-fc7cedcbf49b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05e88d850>]}
+[0m21:17:00.969426 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:17:00.971219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a2f7873-0cba-4436-946e-fc7cedcbf49b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05ed360a0>]}
+[0m21:17:00.978013 [info ] [MainThread]: 
+[0m21:17:00.980691 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:17:00.985404 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse"
+[0m21:17:01.026280 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m21:17:01.032413 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:17:01.033537 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:01.049066 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.02 seconds
+[0m21:17:01.055088 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:17:01.086831 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse_warehouse"
+[0m21:17:01.185282 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:17:01.194821 [debug] [ThreadPool]: On list_warehouse_warehouse: BEGIN
+[0m21:17:01.196286 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:01.225283 [debug] [ThreadPool]: SQL status: BEGIN in 0.03 seconds
+[0m21:17:01.228869 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:17:01.237260 [debug] [ThreadPool]: On list_warehouse_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse_warehouse"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m21:17:01.249532 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:17:01.254517 [debug] [ThreadPool]: On list_warehouse_warehouse: ROLLBACK
+[0m21:17:01.261359 [debug] [ThreadPool]: On list_warehouse_warehouse: Close
+[0m21:17:01.312018 [debug] [MainThread]: Using postgres connection "master"
+[0m21:17:01.321087 [debug] [MainThread]: On master: BEGIN
+[0m21:17:01.321982 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:17:01.334752 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+[0m21:17:01.336263 [debug] [MainThread]: Using postgres connection "master"
+[0m21:17:01.337186 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:17:01.364446 [debug] [MainThread]: SQL status: SELECT 1 in 0.03 seconds
+[0m21:17:01.368651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a2f7873-0cba-4436-946e-fc7cedcbf49b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05e8690a0>]}
+[0m21:17:01.370146 [debug] [MainThread]: On master: ROLLBACK
+[0m21:17:01.372203 [debug] [MainThread]: Using postgres connection "master"
+[0m21:17:01.373271 [debug] [MainThread]: On master: BEGIN
+[0m21:17:01.376546 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:17:01.377761 [debug] [MainThread]: On master: COMMIT
+[0m21:17:01.378705 [debug] [MainThread]: Using postgres connection "master"
+[0m21:17:01.380232 [debug] [MainThread]: On master: COMMIT
+[0m21:17:01.381810 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:17:01.382937 [debug] [MainThread]: On master: Close
+[0m21:17:01.390276 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:17:01.392066 [info ] [MainThread]: 
+[0m21:17:01.403220 [debug] [Thread-1  ]: Began running node model.dbt_.dim_types
+[0m21:17:01.404657 [info ] [Thread-1  ]: 1 of 5 START table model warehouse.dim_types ................................... [RUN]
+[0m21:17:01.406865 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.dim_types"
+[0m21:17:01.407794 [debug] [Thread-1  ]: Began compiling node model.dbt_.dim_types
+[0m21:17:01.409066 [debug] [Thread-1  ]: Compiling model.dbt_.dim_types
+[0m21:17:01.419667 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.dim_types"
+[0m21:17:01.421585 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:17:01.422766 [debug] [Thread-1  ]: Began executing node model.dbt_.dim_types
+[0m21:17:01.671993 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.dim_types"
+[0m21:17:01.685161 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:17:01.686920 [debug] [Thread-1  ]: On model.dbt_.dim_types: BEGIN
+[0m21:17:01.687994 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:17:01.717183 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m21:17:01.718177 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:17:01.718914 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+
+
+  create  table "warehouse"."warehouse"."dim_types__dbt_tmp"
+  as (
+    
+with source_data as (
+    select * from "warehouse"."traffic_source"."source"
+),
+
+final as (
+    SELECT distinct
+    md5(types) as Id,
+    types FROM source_data
+)
+
+select * from final
+  );
+[0m21:17:01.722669 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "traffic_source.source" does not exist
+LINE 8:     select * from "warehouse"."traffic_source"."source"
+                          ^
+
+[0m21:17:01.732861 [debug] [Thread-1  ]: On model.dbt_.dim_types: ROLLBACK
+[0m21:17:01.736088 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:17:01.741005 [debug] [Thread-1  ]: On model.dbt_.dim_types: Close
+[0m21:17:01.752682 [debug] [Thread-1  ]: Database Error in model dim_types (models/traffic_models/dim_types.sql)
+  relation "traffic_source.source" does not exist
+  LINE 8:     select * from "warehouse"."traffic_source"."source"
+                            ^
+  compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:17:01.754272 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a2f7873-0cba-4436-946e-fc7cedcbf49b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05c7cea60>]}
+[0m21:17:01.755990 [error] [Thread-1  ]: 1 of 5 ERROR creating table model warehouse.dim_types .......................... [[31mERROR[0m in 0.35s]
+[0m21:17:01.761698 [debug] [Thread-1  ]: Finished running node model.dbt_.dim_types
+[0m21:17:01.766361 [debug] [Thread-1  ]: Began running node model.dbt_.my_first_dbt_model
+[0m21:17:01.768418 [info ] [Thread-1  ]: 2 of 5 START table model warehouse.my_first_dbt_model .......................... [RUN]
+[0m21:17:01.781411 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:17:01.790345 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_first_dbt_model
+[0m21:17:01.792379 [debug] [Thread-1  ]: Compiling model.dbt_.my_first_dbt_model
+[0m21:17:01.817851 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:17:01.826657 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:17:01.829229 [debug] [Thread-1  ]: Began executing node model.dbt_.my_first_dbt_model
+[0m21:17:01.906227 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:17:01.913875 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:17:01.916372 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: BEGIN
+[0m21:17:01.920631 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:17:01.935603 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+[0m21:17:01.941941 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:17:01.943064 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+
+
+  create  table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+[0m21:17:01.948986 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.0 seconds
+[0m21:17:01.999530 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:17:02.005161 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m21:17:02.009045 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:17:02.025972 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:17:02.029899 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m21:17:02.033705 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:17:02.223148 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:17:02.227761 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:17:02.230009 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:17:02.242347 [debug] [Thread-1  ]: SQL status: COMMIT in 0.01 seconds
+[0m21:17:02.310678 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:17:02.318105 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+drop table if exists "warehouse"."warehouse"."my_first_dbt_model__dbt_backup" cascade
+[0m21:17:02.354086 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.03 seconds
+[0m21:17:02.358659 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:17:02.368395 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: Close
+[0m21:17:02.387436 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a2f7873-0cba-4436-946e-fc7cedcbf49b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05e847eb0>]}
+[0m21:17:02.389277 [info ] [Thread-1  ]: 2 of 5 OK created table model warehouse.my_first_dbt_model ..................... [[32mSELECT 2[0m in 0.61s]
+[0m21:17:02.391936 [debug] [Thread-1  ]: Finished running node model.dbt_.my_first_dbt_model
+[0m21:17:02.396518 [debug] [Thread-1  ]: Began running node model.dbt_.fct_summary
+[0m21:17:02.398156 [info ] [Thread-1  ]: 3 of 5 SKIP relation warehouse.fct_summary ..................................... [[33mSKIP[0m]
+[0m21:17:02.411660 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_summary
+[0m21:17:02.413293 [debug] [Thread-1  ]: Began running node model.dbt_.fct_trajectory
+[0m21:17:02.414595 [info ] [Thread-1  ]: 4 of 5 SKIP relation warehouse.fct_trajectory .................................. [[33mSKIP[0m]
+[0m21:17:02.416821 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_trajectory
+[0m21:17:02.420248 [debug] [Thread-1  ]: Began running node model.dbt_.my_second_dbt_model
+[0m21:17:02.424049 [info ] [Thread-1  ]: 5 of 5 START view model warehouse.my_second_dbt_model .......................... [RUN]
+[0m21:17:02.429488 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:17:02.435687 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_second_dbt_model
+[0m21:17:02.439640 [debug] [Thread-1  ]: Compiling model.dbt_.my_second_dbt_model
+[0m21:17:02.459166 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:17:02.462998 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:17:02.478556 [debug] [Thread-1  ]: Began executing node model.dbt_.my_second_dbt_model
+[0m21:17:02.705778 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:17:02.712326 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:17:02.714319 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: BEGIN
+[0m21:17:02.716292 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:17:02.731402 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:17:02.733570 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:17:02.734934 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+
+  create view "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "warehouse"."warehouse"."my_first_dbt_model"
+where id = 1
+  );
+[0m21:17:02.743291 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+[0m21:17:02.759750 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:17:02.761245 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+alter table "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m21:17:02.763445 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:17:02.770916 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:17:02.771995 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:17:02.772937 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:17:02.808832 [debug] [Thread-1  ]: SQL status: COMMIT in 0.04 seconds
+[0m21:17:02.818637 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:17:02.819724 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+drop view if exists "warehouse"."warehouse"."my_second_dbt_model__dbt_backup" cascade
+[0m21:17:02.823075 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m21:17:02.832060 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:17:02.836100 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: Close
+[0m21:17:02.848975 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a2f7873-0cba-4436-946e-fc7cedcbf49b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05d7fa520>]}
+[0m21:17:02.850664 [info ] [Thread-1  ]: 5 of 5 OK created view model warehouse.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 0.42s]
+[0m21:17:02.853819 [debug] [Thread-1  ]: Finished running node model.dbt_.my_second_dbt_model
+[0m21:17:02.867109 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:17:02.868352 [debug] [MainThread]: Using postgres connection "master"
+[0m21:17:02.869331 [debug] [MainThread]: On master: BEGIN
+[0m21:17:02.870174 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:17:02.881520 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+[0m21:17:02.883508 [debug] [MainThread]: On master: COMMIT
+[0m21:17:02.884720 [debug] [MainThread]: Using postgres connection "master"
+[0m21:17:02.885612 [debug] [MainThread]: On master: COMMIT
+[0m21:17:02.887128 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:17:02.888274 [debug] [MainThread]: On master: Close
+[0m21:17:02.897980 [info ] [MainThread]: 
+[0m21:17:02.899759 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 1.92 seconds (1.92s).
+[0m21:17:02.903333 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:17:02.906338 [debug] [MainThread]: Connection 'list_warehouse' was properly closed.
+[0m21:17:02.908451 [debug] [MainThread]: Connection 'model.dbt_.my_second_dbt_model' was properly closed.
+[0m21:17:02.967193 [info ] [MainThread]: 
+[0m21:17:02.973246 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:17:02.975025 [info ] [MainThread]: 
+[0m21:17:02.976606 [error] [MainThread]: [33mDatabase Error in model dim_types (models/traffic_models/dim_types.sql)[0m
+[0m21:17:02.980883 [error] [MainThread]:   relation "traffic_source.source" does not exist
+[0m21:17:02.984560 [error] [MainThread]:   LINE 8:     select * from "warehouse"."traffic_source"."source"
+[0m21:17:02.993170 [error] [MainThread]:                             ^
+[0m21:17:02.994718 [error] [MainThread]:   compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:17:02.996241 [info ] [MainThread]: 
+[0m21:17:02.997768 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m21:17:02.999515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05ed15e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05c72e220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb05c72e9a0>]}
+
+
+============================== 2022-07-27 21:18:08.486201 | a62dc8d8-f3fd-46a7-b2c1-e2759cd22814 ==============================
+[0m21:18:08.486321 [info ] [MainThread]: Running with dbt=1.2.0
+[0m21:18:08.512519 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/bini/10_acad/week_12/ELT_Pipeline_Project_2/dbt_/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:18:08.514710 [debug] [MainThread]: Tracking: tracking
+[0m21:18:08.749342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa120460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa120550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa120520>]}
+[0m21:18:09.147596 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:18:09.149689 [debug] [MainThread]: Partial parsing: updated file: dbt_://models/traffic_models/dim_types.sql
+[0m21:18:09.217613 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/dim_types.sql
+[0m21:18:09.357150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a62dc8d8-f3fd-46a7-b2c1-e2759cd22814', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3f9fc9130>]}
+[0m21:18:09.385499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a62dc8d8-f3fd-46a7-b2c1-e2759cd22814', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa09a8e0>]}
+[0m21:18:09.387200 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:18:09.389032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a62dc8d8-f3fd-46a7-b2c1-e2759cd22814', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3f9fc8f10>]}
+[0m21:18:09.404600 [info ] [MainThread]: 
+[0m21:18:09.417965 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:18:09.429240 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse"
+[0m21:18:09.495026 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m21:18:09.496140 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:18:09.497091 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:18:09.515008 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.02 seconds
+[0m21:18:09.529788 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:18:09.546577 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse_warehouse"
+[0m21:18:09.651523 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:18:09.652495 [debug] [ThreadPool]: On list_warehouse_warehouse: BEGIN
+[0m21:18:09.656777 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:18:09.671846 [debug] [ThreadPool]: SQL status: BEGIN in 0.02 seconds
+[0m21:18:09.675374 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:18:09.676125 [debug] [ThreadPool]: On list_warehouse_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse_warehouse"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m21:18:09.688185 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:18:09.694025 [debug] [ThreadPool]: On list_warehouse_warehouse: ROLLBACK
+[0m21:18:09.695650 [debug] [ThreadPool]: On list_warehouse_warehouse: Close
+[0m21:18:09.742603 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:09.745577 [debug] [MainThread]: On master: BEGIN
+[0m21:18:09.749878 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:18:09.806291 [debug] [MainThread]: SQL status: BEGIN in 0.06 seconds
+[0m21:18:09.807226 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:09.807925 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:18:09.841271 [debug] [MainThread]: SQL status: SELECT 1 in 0.03 seconds
+[0m21:18:09.845202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a62dc8d8-f3fd-46a7-b2c1-e2759cd22814', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa137af0>]}
+[0m21:18:09.847659 [debug] [MainThread]: On master: ROLLBACK
+[0m21:18:09.849417 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:09.850315 [debug] [MainThread]: On master: BEGIN
+[0m21:18:09.853225 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:18:09.854222 [debug] [MainThread]: On master: COMMIT
+[0m21:18:09.855413 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:09.858131 [debug] [MainThread]: On master: COMMIT
+[0m21:18:09.860522 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:18:09.862810 [debug] [MainThread]: On master: Close
+[0m21:18:09.873631 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:18:09.875574 [info ] [MainThread]: 
+[0m21:18:09.894875 [debug] [Thread-1  ]: Began running node model.dbt_.dim_types
+[0m21:18:09.896356 [info ] [Thread-1  ]: 1 of 5 START table model warehouse.dim_types ................................... [RUN]
+[0m21:18:09.899471 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.dim_types"
+[0m21:18:09.900795 [debug] [Thread-1  ]: Began compiling node model.dbt_.dim_types
+[0m21:18:09.901732 [debug] [Thread-1  ]: Compiling model.dbt_.dim_types
+[0m21:18:09.912615 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.dim_types"
+[0m21:18:09.914309 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:18:09.917839 [debug] [Thread-1  ]: Began executing node model.dbt_.dim_types
+[0m21:18:10.204590 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.dim_types"
+[0m21:18:10.208478 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:18:10.209403 [debug] [Thread-1  ]: On model.dbt_.dim_types: BEGIN
+[0m21:18:10.210214 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:18:10.233057 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:18:10.233992 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:18:10.235485 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+
+
+  create  table "warehouse"."warehouse"."dim_types__dbt_tmp"
+  as (
+    
+with source_data as (
+    select * from "warehouse"."source"
+),
+
+final as (
+    SELECT distinct
+    md5(types) as Id,
+    types FROM source_data
+)
+
+select * from final
+  );
+[0m21:18:10.242680 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "warehouse.source" does not exist
+LINE 8:     select * from "warehouse"."source"
+                          ^
+
+[0m21:18:10.245295 [debug] [Thread-1  ]: On model.dbt_.dim_types: ROLLBACK
+[0m21:18:10.248827 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:18:10.252752 [debug] [Thread-1  ]: On model.dbt_.dim_types: Close
+[0m21:18:10.262922 [debug] [Thread-1  ]: Database Error in model dim_types (models/traffic_models/dim_types.sql)
+  relation "warehouse.source" does not exist
+  LINE 8:     select * from "warehouse"."source"
+                            ^
+  compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:18:10.264358 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a62dc8d8-f3fd-46a7-b2c1-e2759cd22814', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3f82c9910>]}
+[0m21:18:10.269481 [error] [Thread-1  ]: 1 of 5 ERROR creating table model warehouse.dim_types .......................... [[31mERROR[0m in 0.37s]
+[0m21:18:10.271665 [debug] [Thread-1  ]: Finished running node model.dbt_.dim_types
+[0m21:18:10.275410 [debug] [Thread-1  ]: Began running node model.dbt_.my_first_dbt_model
+[0m21:18:10.277477 [info ] [Thread-1  ]: 2 of 5 START table model warehouse.my_first_dbt_model .......................... [RUN]
+[0m21:18:10.281843 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:18:10.284383 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_first_dbt_model
+[0m21:18:10.286592 [debug] [Thread-1  ]: Compiling model.dbt_.my_first_dbt_model
+[0m21:18:10.305761 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:18:10.310999 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:18:10.313530 [debug] [Thread-1  ]: Began executing node model.dbt_.my_first_dbt_model
+[0m21:18:10.349161 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:18:10.360062 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:18:10.362592 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: BEGIN
+[0m21:18:10.364848 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:18:10.381635 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:18:10.386115 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:18:10.387674 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+
+
+  create  table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+[0m21:18:10.396536 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:18:10.460143 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:18:10.469972 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m21:18:10.481691 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:18:10.511499 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:18:10.515155 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m21:18:10.521079 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:18:10.710601 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:18:10.711713 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:18:10.712730 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:18:10.726869 [debug] [Thread-1  ]: SQL status: COMMIT in 0.01 seconds
+[0m21:18:10.780072 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:18:10.788904 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+drop table if exists "warehouse"."warehouse"."my_first_dbt_model__dbt_backup" cascade
+[0m21:18:10.816207 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.02 seconds
+[0m21:18:10.821116 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:18:10.822275 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: Close
+[0m21:18:10.825881 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a62dc8d8-f3fd-46a7-b2c1-e2759cd22814', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3f8af61f0>]}
+[0m21:18:10.827816 [info ] [Thread-1  ]: 2 of 5 OK created table model warehouse.my_first_dbt_model ..................... [[32mSELECT 2[0m in 0.55s]
+[0m21:18:10.840595 [debug] [Thread-1  ]: Finished running node model.dbt_.my_first_dbt_model
+[0m21:18:10.843781 [debug] [Thread-1  ]: Began running node model.dbt_.fct_summary
+[0m21:18:10.845972 [info ] [Thread-1  ]: 3 of 5 SKIP relation warehouse.fct_summary ..................................... [[33mSKIP[0m]
+[0m21:18:10.850578 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_summary
+[0m21:18:10.869946 [debug] [Thread-1  ]: Began running node model.dbt_.fct_trajectory
+[0m21:18:10.874893 [info ] [Thread-1  ]: 4 of 5 SKIP relation warehouse.fct_trajectory .................................. [[33mSKIP[0m]
+[0m21:18:10.880340 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_trajectory
+[0m21:18:10.881697 [debug] [Thread-1  ]: Began running node model.dbt_.my_second_dbt_model
+[0m21:18:10.883841 [info ] [Thread-1  ]: 5 of 5 START view model warehouse.my_second_dbt_model .......................... [RUN]
+[0m21:18:10.890344 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:18:10.891514 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_second_dbt_model
+[0m21:18:10.892497 [debug] [Thread-1  ]: Compiling model.dbt_.my_second_dbt_model
+[0m21:18:10.902929 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:18:10.904804 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:18:10.905989 [debug] [Thread-1  ]: Began executing node model.dbt_.my_second_dbt_model
+[0m21:18:11.098543 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:18:11.100590 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:18:11.102397 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: BEGIN
+[0m21:18:11.103346 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:18:11.125704 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:18:11.132043 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:18:11.133988 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+
+  create view "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "warehouse"."warehouse"."my_first_dbt_model"
+where id = 1
+  );
+[0m21:18:11.147332 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+[0m21:18:11.166252 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:18:11.167165 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+alter table "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m21:18:11.172968 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:18:11.190304 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:18:11.202400 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:18:11.205429 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:18:11.269371 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m21:18:11.277925 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:18:11.278833 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+drop view if exists "warehouse"."warehouse"."my_second_dbt_model__dbt_backup" cascade
+[0m21:18:11.280642 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+[0m21:18:11.288620 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:18:11.289616 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: Close
+[0m21:18:11.292860 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a62dc8d8-f3fd-46a7-b2c1-e2759cd22814', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3f82a9d30>]}
+[0m21:18:11.298114 [info ] [Thread-1  ]: 5 of 5 OK created view model warehouse.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 0.40s]
+[0m21:18:11.302472 [debug] [Thread-1  ]: Finished running node model.dbt_.my_second_dbt_model
+[0m21:18:11.309297 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:18:11.310320 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:11.311076 [debug] [MainThread]: On master: BEGIN
+[0m21:18:11.311752 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:18:11.329131 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+[0m21:18:11.330918 [debug] [MainThread]: On master: COMMIT
+[0m21:18:11.333136 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:11.333902 [debug] [MainThread]: On master: COMMIT
+[0m21:18:11.338814 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:18:11.339777 [debug] [MainThread]: On master: Close
+[0m21:18:11.364557 [info ] [MainThread]: 
+[0m21:18:11.366600 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 1.95 seconds (1.95s).
+[0m21:18:11.372358 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:18:11.373301 [debug] [MainThread]: Connection 'list_warehouse' was properly closed.
+[0m21:18:11.373992 [debug] [MainThread]: Connection 'model.dbt_.my_second_dbt_model' was properly closed.
+[0m21:18:11.423871 [info ] [MainThread]: 
+[0m21:18:11.450902 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:18:11.456720 [info ] [MainThread]: 
+[0m21:18:11.458678 [error] [MainThread]: [33mDatabase Error in model dim_types (models/traffic_models/dim_types.sql)[0m
+[0m21:18:11.465415 [error] [MainThread]:   relation "warehouse.source" does not exist
+[0m21:18:11.469878 [error] [MainThread]:   LINE 8:     select * from "warehouse"."source"
+[0m21:18:11.471286 [error] [MainThread]:                             ^
+[0m21:18:11.472596 [error] [MainThread]:   compiled SQL at target/run/dbt_/models/traffic_models/dim_types.sql
+[0m21:18:11.473928 [info ] [MainThread]: 
+[0m21:18:11.486186 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=2 TOTAL=5
+[0m21:18:11.487939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa05a3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa05a3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3fa05a370>]}
+
+
+============================== 2022-07-27 21:20:50.147062 | 9b8add4c-8101-4c32-b3f0-892f2e8a0370 ==============================
+[0m21:20:50.147178 [info ] [MainThread]: Running with dbt=1.2.0
+[0m21:20:50.162022 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/bini/10_acad/week_12/ELT_Pipeline_Project_2/dbt_/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:20:50.163893 [debug] [MainThread]: Tracking: tracking
+[0m21:20:50.325722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8bf1520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8bf1610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8bf15e0>]}
+[0m21:20:50.609331 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:20:50.611186 [debug] [MainThread]: Partial parsing: updated file: dbt_://models/traffic_models/dim_types.sql
+[0m21:20:50.738683 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/dim_types.sql
+[0m21:20:50.913565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8ad01f0>]}
+[0m21:20:50.942038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8baa9a0>]}
+[0m21:20:50.943734 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:20:50.945860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8ad2fd0>]}
+[0m21:20:50.965849 [info ] [MainThread]: 
+[0m21:20:50.972908 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:20:50.987882 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse"
+[0m21:20:51.066193 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m21:20:51.067131 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:20:51.067847 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:20:51.091229 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.02 seconds
+[0m21:20:51.096348 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:20:51.110289 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse_warehouse"
+[0m21:20:51.159376 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:20:51.160673 [debug] [ThreadPool]: On list_warehouse_warehouse: BEGIN
+[0m21:20:51.161614 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:20:51.180022 [debug] [ThreadPool]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:51.181159 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:20:51.188955 [debug] [ThreadPool]: On list_warehouse_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse_warehouse"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m21:20:51.206194 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.02 seconds
+[0m21:20:51.213291 [debug] [ThreadPool]: On list_warehouse_warehouse: ROLLBACK
+[0m21:20:51.224375 [debug] [ThreadPool]: On list_warehouse_warehouse: Close
+[0m21:20:51.257069 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:51.263762 [debug] [MainThread]: On master: BEGIN
+[0m21:20:51.269570 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:20:51.289049 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:51.293795 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:51.296839 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:20:51.331827 [debug] [MainThread]: SQL status: SELECT 1 in 0.03 seconds
+[0m21:20:51.336105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8c07760>]}
+[0m21:20:51.337413 [debug] [MainThread]: On master: ROLLBACK
+[0m21:20:51.339185 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:51.340094 [debug] [MainThread]: On master: BEGIN
+[0m21:20:51.342636 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:20:51.349366 [debug] [MainThread]: On master: COMMIT
+[0m21:20:51.350901 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:51.352527 [debug] [MainThread]: On master: COMMIT
+[0m21:20:51.356094 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:20:51.357099 [debug] [MainThread]: On master: Close
+[0m21:20:51.366724 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:20:51.371111 [info ] [MainThread]: 
+[0m21:20:51.438489 [debug] [Thread-1  ]: Began running node model.dbt_.dim_types
+[0m21:20:51.440017 [info ] [Thread-1  ]: 1 of 5 START table model warehouse.dim_types ................................... [RUN]
+[0m21:20:51.442450 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.dim_types"
+[0m21:20:51.443615 [debug] [Thread-1  ]: Began compiling node model.dbt_.dim_types
+[0m21:20:51.444504 [debug] [Thread-1  ]: Compiling model.dbt_.dim_types
+[0m21:20:51.458525 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.dim_types"
+[0m21:20:51.460317 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:51.472759 [debug] [Thread-1  ]: Began executing node model.dbt_.dim_types
+[0m21:20:51.825281 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.dim_types"
+[0m21:20:51.828847 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:20:51.835753 [debug] [Thread-1  ]: On model.dbt_.dim_types: BEGIN
+[0m21:20:51.836568 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:20:51.855978 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:51.857049 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:20:51.857958 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+
+
+  create  table "warehouse"."warehouse"."dim_types__dbt_tmp"
+  as (
+    
+with source_data as (
+    select * from "source"
+),
+
+final as (
+    SELECT distinct
+    md5(types) as Id,
+    types FROM source_data
+)
+
+select * from final
+  );
+[0m21:20:52.016590 [debug] [Thread-1  ]: SQL status: SELECT 6 in 0.16 seconds
+[0m21:20:52.063777 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:20:52.075730 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+alter table "warehouse"."warehouse"."dim_types__dbt_tmp" rename to "dim_types"
+[0m21:20:52.081196 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:20:52.221370 [debug] [Thread-1  ]: On model.dbt_.dim_types: COMMIT
+[0m21:20:52.222479 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:20:52.223365 [debug] [Thread-1  ]: On model.dbt_.dim_types: COMMIT
+[0m21:20:52.248360 [debug] [Thread-1  ]: SQL status: COMMIT in 0.02 seconds
+[0m21:20:52.267250 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:20:52.268408 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+drop table if exists "warehouse"."warehouse"."dim_types__dbt_backup" cascade
+[0m21:20:52.270404 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m21:20:52.274465 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:52.275630 [debug] [Thread-1  ]: On model.dbt_.dim_types: Close
+[0m21:20:52.284761 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de85d8190>]}
+[0m21:20:52.286519 [info ] [Thread-1  ]: 1 of 5 OK created table model warehouse.dim_types .............................. [[32mSELECT 6[0m in 0.84s]
+[0m21:20:52.291066 [debug] [Thread-1  ]: Finished running node model.dbt_.dim_types
+[0m21:20:52.300849 [debug] [Thread-1  ]: Began running node model.dbt_.my_first_dbt_model
+[0m21:20:52.303364 [info ] [Thread-1  ]: 2 of 5 START table model warehouse.my_first_dbt_model .......................... [RUN]
+[0m21:20:52.311145 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:20:52.312854 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_first_dbt_model
+[0m21:20:52.316455 [debug] [Thread-1  ]: Compiling model.dbt_.my_first_dbt_model
+[0m21:20:52.338155 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:20:52.339982 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:52.341188 [debug] [Thread-1  ]: Began executing node model.dbt_.my_first_dbt_model
+[0m21:20:52.383706 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:20:52.388693 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:20:52.389928 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: BEGIN
+[0m21:20:52.390863 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:20:52.411931 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:52.415319 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:20:52.418031 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+
+
+  create  table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+[0m21:20:52.430307 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:20:52.454127 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:20:52.455008 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m21:20:52.467326 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:20:52.509337 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:20:52.510225 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m21:20:52.516850 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.01 seconds
+[0m21:20:52.570694 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:20:52.582401 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:20:52.583143 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:20:52.614473 [debug] [Thread-1  ]: SQL status: COMMIT in 0.03 seconds
+[0m21:20:52.622089 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:20:52.622972 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+drop table if exists "warehouse"."warehouse"."my_first_dbt_model__dbt_backup" cascade
+[0m21:20:52.659675 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m21:20:52.663806 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:52.664853 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: Close
+[0m21:20:52.666568 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8b01340>]}
+[0m21:20:52.672760 [info ] [Thread-1  ]: 2 of 5 OK created table model warehouse.my_first_dbt_model ..................... [[32mSELECT 2[0m in 0.36s]
+[0m21:20:52.677248 [debug] [Thread-1  ]: Finished running node model.dbt_.my_first_dbt_model
+[0m21:20:52.681870 [debug] [Thread-1  ]: Began running node model.dbt_.fct_summary
+[0m21:20:52.685755 [info ] [Thread-1  ]: 3 of 5 START table model warehouse.fct_summary ................................. [RUN]
+[0m21:20:52.707036 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.fct_summary"
+[0m21:20:52.709415 [debug] [Thread-1  ]: Began compiling node model.dbt_.fct_summary
+[0m21:20:52.710202 [debug] [Thread-1  ]: Compiling model.dbt_.fct_summary
+[0m21:20:52.740048 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.fct_summary"
+[0m21:20:52.741554 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:52.742455 [debug] [Thread-1  ]: Began executing node model.dbt_.fct_summary
+[0m21:20:52.770921 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.fct_summary"
+[0m21:20:52.773574 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_summary"
+[0m21:20:52.774419 [debug] [Thread-1  ]: On model.dbt_.fct_summary: BEGIN
+[0m21:20:52.779632 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:20:52.794999 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:52.796520 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_summary"
+[0m21:20:52.798253 [debug] [Thread-1  ]: On model.dbt_.fct_summary: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_summary"} */
+
+
+  create  table "warehouse"."warehouse"."fct_summary__dbt_tmp"
+  as (
+    
+
+with source_data as (
+    select * from "warehouse"."traffic_source"."source"
+),
+
+selection as (
+    select track_id, md5(types) as type_id, traveled_d, avg_speed from source_data
+),
+
+dim_types as (
+    select * from "warehouse"."warehouse"."dim_types"
+), 
+
+final as (
+    select sel.track_id, dim_types.types, sel.traveled_d, sel.avg_speed
+    from selection as sel 
+    LEFT JOIN dim_types on sel.type_id = dim_types.Id
+)
+
+select * from final
+  );
+[0m21:20:52.802315 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "traffic_source.source" does not exist
+LINE 9:     select * from "warehouse"."traffic_source"."source"
+                          ^
+
+[0m21:20:52.803289 [debug] [Thread-1  ]: On model.dbt_.fct_summary: ROLLBACK
+[0m21:20:52.810635 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:52.814113 [debug] [Thread-1  ]: On model.dbt_.fct_summary: Close
+[0m21:20:52.822993 [debug] [Thread-1  ]: Database Error in model fct_summary (models/traffic_models/fct_summary.sql)
+  relation "traffic_source.source" does not exist
+  LINE 9:     select * from "warehouse"."traffic_source"."source"
+                            ^
+  compiled SQL at target/run/dbt_/models/traffic_models/fct_summary.sql
+[0m21:20:52.824283 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de856f100>]}
+[0m21:20:52.829493 [error] [Thread-1  ]: 3 of 5 ERROR creating table model warehouse.fct_summary ........................ [[31mERROR[0m in 0.12s]
+[0m21:20:52.834051 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_summary
+[0m21:20:52.835108 [debug] [Thread-1  ]: Began running node model.dbt_.fct_trajectory
+[0m21:20:52.857301 [info ] [Thread-1  ]: 4 of 5 START table model warehouse.fct_trajectory .............................. [RUN]
+[0m21:20:52.865083 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.fct_trajectory"
+[0m21:20:52.866400 [debug] [Thread-1  ]: Began compiling node model.dbt_.fct_trajectory
+[0m21:20:52.868348 [debug] [Thread-1  ]: Compiling model.dbt_.fct_trajectory
+[0m21:20:52.883940 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.fct_trajectory"
+[0m21:20:52.885680 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:52.900068 [debug] [Thread-1  ]: Began executing node model.dbt_.fct_trajectory
+[0m21:20:52.955069 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.fct_trajectory"
+[0m21:20:52.962369 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_trajectory"
+[0m21:20:52.967124 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: BEGIN
+[0m21:20:52.970222 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:20:52.987208 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:52.990606 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_trajectory"
+[0m21:20:52.992040 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_trajectory"} */
+
+
+  create  table "warehouse"."warehouse"."fct_trajectory__dbt_tmp"
+  as (
+    
+
+with source_data as (
+    select * from "warehouse"."traffic_source"."source"
+),
+
+selection as (
+    select track_id, md5(types) as type_id, trajectory from source_data
+),
+
+dim_types as (
+    select * from "warehouse"."warehouse"."dim_types"
+), 
+
+final as (
+    select sel.track_id, dim_types.types, sel.trajectory as paths
+    from selection as sel 
+    LEFT JOIN dim_types on sel.type_id = dim_types.Id
+)
+
+select * from final
+  );
+[0m21:20:53.008227 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "traffic_source.source" does not exist
+LINE 9:     select * from "warehouse"."traffic_source"."source"
+                          ^
+
+[0m21:20:53.016013 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: ROLLBACK
+[0m21:20:53.044368 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:53.048434 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: Close
+[0m21:20:53.050568 [debug] [Thread-1  ]: Database Error in model fct_trajectory (models/traffic_models/fct_trajectory.sql)
+  relation "traffic_source.source" does not exist
+  LINE 9:     select * from "warehouse"."traffic_source"."source"
+                            ^
+  compiled SQL at target/run/dbt_/models/traffic_models/fct_trajectory.sql
+[0m21:20:53.052022 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8513dc0>]}
+[0m21:20:53.053696 [error] [Thread-1  ]: 4 of 5 ERROR creating table model warehouse.fct_trajectory ..................... [[31mERROR[0m in 0.19s]
+[0m21:20:53.057669 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_trajectory
+[0m21:20:53.058997 [debug] [Thread-1  ]: Began running node model.dbt_.my_second_dbt_model
+[0m21:20:53.060634 [info ] [Thread-1  ]: 5 of 5 START view model warehouse.my_second_dbt_model .......................... [RUN]
+[0m21:20:53.066496 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:20:53.067589 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_second_dbt_model
+[0m21:20:53.069006 [debug] [Thread-1  ]: Compiling model.dbt_.my_second_dbt_model
+[0m21:20:53.077976 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:20:53.087499 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:53.090713 [debug] [Thread-1  ]: Began executing node model.dbt_.my_second_dbt_model
+[0m21:20:53.257935 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:20:53.264810 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:20:53.266893 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: BEGIN
+[0m21:20:53.267785 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:20:53.303728 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m21:20:53.304923 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:20:53.324356 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+
+  create view "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "warehouse"."warehouse"."my_first_dbt_model"
+where id = 1
+  );
+[0m21:20:53.332263 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+[0m21:20:53.341664 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:20:53.342539 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+alter table "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m21:20:53.351910 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:20:53.365371 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:20:53.366281 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:20:53.366976 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:20:53.391250 [debug] [Thread-1  ]: SQL status: COMMIT in 0.02 seconds
+[0m21:20:53.415188 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:20:53.416068 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+drop view if exists "warehouse"."warehouse"."my_second_dbt_model__dbt_backup" cascade
+[0m21:20:53.425702 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.01 seconds
+[0m21:20:53.431737 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:20:53.435042 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: Close
+[0m21:20:53.445872 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b8add4c-8101-4c32-b3f0-892f2e8a0370', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8532d60>]}
+[0m21:20:53.449490 [info ] [Thread-1  ]: 5 of 5 OK created view model warehouse.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 0.38s]
+[0m21:20:53.464942 [debug] [Thread-1  ]: Finished running node model.dbt_.my_second_dbt_model
+[0m21:20:53.470223 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:20:53.471867 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:53.473046 [debug] [MainThread]: On master: BEGIN
+[0m21:20:53.473991 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:20:53.487916 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+[0m21:20:53.492874 [debug] [MainThread]: On master: COMMIT
+[0m21:20:53.499349 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:53.504065 [debug] [MainThread]: On master: COMMIT
+[0m21:20:53.513882 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:20:53.519569 [debug] [MainThread]: On master: Close
+[0m21:20:53.527051 [info ] [MainThread]: 
+[0m21:20:53.540948 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 2.56 seconds (2.56s).
+[0m21:20:53.556415 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:20:53.561215 [debug] [MainThread]: Connection 'model.dbt_.my_second_dbt_model' was properly closed.
+[0m21:20:53.611577 [info ] [MainThread]: 
+[0m21:20:53.621395 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m21:20:53.622865 [info ] [MainThread]: 
+[0m21:20:53.632274 [error] [MainThread]: [33mDatabase Error in model fct_summary (models/traffic_models/fct_summary.sql)[0m
+[0m21:20:53.633838 [error] [MainThread]:   relation "traffic_source.source" does not exist
+[0m21:20:53.635074 [error] [MainThread]:   LINE 9:     select * from "warehouse"."traffic_source"."source"
+[0m21:20:53.636320 [error] [MainThread]:                             ^
+[0m21:20:53.637533 [error] [MainThread]:   compiled SQL at target/run/dbt_/models/traffic_models/fct_summary.sql
+[0m21:20:53.638769 [info ] [MainThread]: 
+[0m21:20:53.640019 [error] [MainThread]: [33mDatabase Error in model fct_trajectory (models/traffic_models/fct_trajectory.sql)[0m
+[0m21:20:53.650616 [error] [MainThread]:   relation "traffic_source.source" does not exist
+[0m21:20:53.651859 [error] [MainThread]:   LINE 9:     select * from "warehouse"."traffic_source"."source"
+[0m21:20:53.653170 [error] [MainThread]:                             ^
+[0m21:20:53.654377 [error] [MainThread]:   compiled SQL at target/run/dbt_/models/traffic_models/fct_trajectory.sql
+[0m21:20:53.655657 [info ] [MainThread]: 
+[0m21:20:53.657004 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=2 SKIP=0 TOTAL=5
+[0m21:20:53.658528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8b6c460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8b6c490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1de8b6c430>]}
+
+
+============================== 2022-07-27 21:23:24.914759 | a676c8f2-cadb-40cb-afcb-8120b89d9038 ==============================
+[0m21:23:24.914901 [info ] [MainThread]: Running with dbt=1.2.0
+[0m21:23:24.940533 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/bini/10_acad/week_12/ELT_Pipeline_Project_2/dbt_/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:23:24.943326 [debug] [MainThread]: Tracking: tracking
+[0m21:23:25.132732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39419b8580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39419b8670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39419b8640>]}
+[0m21:23:25.604412 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m21:23:25.606269 [debug] [MainThread]: Partial parsing: updated file: dbt_://models/traffic_models/fct_trajectory.sql
+[0m21:23:25.607577 [debug] [MainThread]: Partial parsing: updated file: dbt_://models/traffic_models/fct_summary.sql
+[0m21:23:25.663061 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_trajectory.sql
+[0m21:23:25.741015 [debug] [MainThread]: 1699: static parser successfully parsed traffic_models/fct_summary.sql
+[0m21:23:25.793503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f394186aa00>]}
+[0m21:23:25.820059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39418f2670>]}
+[0m21:23:25.821504 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:23:25.823106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39418f25e0>]}
+[0m21:23:25.828820 [info ] [MainThread]: 
+[0m21:23:25.831261 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:23:25.835284 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse"
+[0m21:23:25.876639 [debug] [ThreadPool]: Using postgres connection "list_warehouse"
+[0m21:23:25.877583 [debug] [ThreadPool]: On list_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:23:25.878339 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:23:25.957778 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.08 seconds
+[0m21:23:25.962667 [debug] [ThreadPool]: On list_warehouse: Close
+[0m21:23:25.985518 [debug] [ThreadPool]: Acquiring new postgres connection "list_warehouse_warehouse"
+[0m21:23:26.055464 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:23:26.056584 [debug] [ThreadPool]: On list_warehouse_warehouse: BEGIN
+[0m21:23:26.057460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:23:26.071750 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m21:23:26.075061 [debug] [ThreadPool]: Using postgres connection "list_warehouse_warehouse"
+[0m21:23:26.077918 [debug] [ThreadPool]: On list_warehouse_warehouse: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "list_warehouse_warehouse"} */
+select
+      'warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m21:23:26.090082 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.01 seconds
+[0m21:23:26.113696 [debug] [ThreadPool]: On list_warehouse_warehouse: ROLLBACK
+[0m21:23:26.124462 [debug] [ThreadPool]: On list_warehouse_warehouse: Close
+[0m21:23:26.165107 [debug] [MainThread]: Using postgres connection "master"
+[0m21:23:26.166027 [debug] [MainThread]: On master: BEGIN
+[0m21:23:26.166729 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:23:26.185494 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+[0m21:23:26.186429 [debug] [MainThread]: Using postgres connection "master"
+[0m21:23:26.187140 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:23:26.226658 [debug] [MainThread]: SQL status: SELECT 1 in 0.04 seconds
+[0m21:23:26.230632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3941931820>]}
+[0m21:23:26.231909 [debug] [MainThread]: On master: ROLLBACK
+[0m21:23:26.234112 [debug] [MainThread]: Using postgres connection "master"
+[0m21:23:26.235283 [debug] [MainThread]: On master: BEGIN
+[0m21:23:26.238716 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:23:26.240186 [debug] [MainThread]: On master: COMMIT
+[0m21:23:26.242289 [debug] [MainThread]: Using postgres connection "master"
+[0m21:23:26.243495 [debug] [MainThread]: On master: COMMIT
+[0m21:23:26.245067 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:23:26.246024 [debug] [MainThread]: On master: Close
+[0m21:23:26.254397 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:23:26.256031 [info ] [MainThread]: 
+[0m21:23:26.290953 [debug] [Thread-1  ]: Began running node model.dbt_.dim_types
+[0m21:23:26.292353 [info ] [Thread-1  ]: 1 of 5 START table model warehouse.dim_types ................................... [RUN]
+[0m21:23:26.294603 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.dim_types"
+[0m21:23:26.295578 [debug] [Thread-1  ]: Began compiling node model.dbt_.dim_types
+[0m21:23:26.296486 [debug] [Thread-1  ]: Compiling model.dbt_.dim_types
+[0m21:23:26.306861 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.dim_types"
+[0m21:23:26.308447 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:26.320290 [debug] [Thread-1  ]: Began executing node model.dbt_.dim_types
+[0m21:23:26.688057 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.dim_types"
+[0m21:23:26.702814 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:23:26.703768 [debug] [Thread-1  ]: On model.dbt_.dim_types: BEGIN
+[0m21:23:26.704522 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:23:26.725177 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:23:26.727387 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:23:26.728886 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+
+
+  create  table "warehouse"."warehouse"."dim_types__dbt_tmp"
+  as (
+    
+with source_data as (
+    select * from "source"
+),
+
+final as (
+    SELECT distinct
+    md5(types) as Id,
+    types FROM source_data
+)
+
+select * from final
+  );
+[0m21:23:26.828681 [debug] [Thread-1  ]: SQL status: SELECT 6 in 0.1 seconds
+[0m21:23:26.925458 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:23:26.926369 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+alter table "warehouse"."warehouse"."dim_types" rename to "dim_types__dbt_backup"
+[0m21:23:26.932389 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.01 seconds
+[0m21:23:26.946569 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:23:26.947466 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+alter table "warehouse"."warehouse"."dim_types__dbt_tmp" rename to "dim_types"
+[0m21:23:26.953694 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.01 seconds
+[0m21:23:27.189386 [debug] [Thread-1  ]: On model.dbt_.dim_types: COMMIT
+[0m21:23:27.190335 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:23:27.191062 [debug] [Thread-1  ]: On model.dbt_.dim_types: COMMIT
+[0m21:23:27.599219 [debug] [Thread-1  ]: SQL status: COMMIT in 0.41 seconds
+[0m21:23:27.624086 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.dim_types"
+[0m21:23:27.625107 [debug] [Thread-1  ]: On model.dbt_.dim_types: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.dim_types"} */
+drop table if exists "warehouse"."warehouse"."dim_types__dbt_backup" cascade
+[0m21:23:27.767093 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.14 seconds
+[0m21:23:27.771300 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:27.772517 [debug] [Thread-1  ]: On model.dbt_.dim_types: Close
+[0m21:23:27.782233 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f394035b130>]}
+[0m21:23:27.784214 [info ] [Thread-1  ]: 1 of 5 OK created table model warehouse.dim_types .............................. [[32mSELECT 6[0m in 1.49s]
+[0m21:23:27.786580 [debug] [Thread-1  ]: Finished running node model.dbt_.dim_types
+[0m21:23:27.788054 [debug] [Thread-1  ]: Began running node model.dbt_.my_first_dbt_model
+[0m21:23:27.793548 [info ] [Thread-1  ]: 2 of 5 START table model warehouse.my_first_dbt_model .......................... [RUN]
+[0m21:23:27.795974 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:23:27.804793 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_first_dbt_model
+[0m21:23:27.805805 [debug] [Thread-1  ]: Compiling model.dbt_.my_first_dbt_model
+[0m21:23:27.825494 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:23:27.829534 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:27.832978 [debug] [Thread-1  ]: Began executing node model.dbt_.my_first_dbt_model
+[0m21:23:27.904605 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_first_dbt_model"
+[0m21:23:27.906202 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:23:27.916820 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: BEGIN
+[0m21:23:27.918040 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:23:27.932616 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+[0m21:23:27.934329 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:23:27.937546 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+
+
+  create  table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+[0m21:23:27.944422 [debug] [Thread-1  ]: SQL status: SELECT 2 in 0.01 seconds
+[0m21:23:27.966496 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:23:27.967390 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m21:23:27.969542 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:23:27.978840 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:23:27.979826 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+alter table "warehouse"."warehouse"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m21:23:27.982130 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:23:27.991852 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:23:27.992863 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:23:27.993581 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: COMMIT
+[0m21:23:28.201033 [debug] [Thread-1  ]: SQL status: COMMIT in 0.21 seconds
+[0m21:23:28.212005 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_first_dbt_model"
+[0m21:23:28.239075 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_first_dbt_model"} */
+drop table if exists "warehouse"."warehouse"."my_first_dbt_model__dbt_backup" cascade
+[0m21:23:28.268375 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.02 seconds
+[0m21:23:28.273387 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:28.274536 [debug] [Thread-1  ]: On model.dbt_.my_first_dbt_model: Close
+[0m21:23:28.283448 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3941888970>]}
+[0m21:23:28.285199 [info ] [Thread-1  ]: 2 of 5 OK created table model warehouse.my_first_dbt_model ..................... [[32mSELECT 2[0m in 0.49s]
+[0m21:23:28.291873 [debug] [Thread-1  ]: Finished running node model.dbt_.my_first_dbt_model
+[0m21:23:28.296481 [debug] [Thread-1  ]: Began running node model.dbt_.fct_summary
+[0m21:23:28.300897 [info ] [Thread-1  ]: 3 of 5 START table model warehouse.fct_summary ................................. [RUN]
+[0m21:23:28.308053 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.fct_summary"
+[0m21:23:28.315320 [debug] [Thread-1  ]: Began compiling node model.dbt_.fct_summary
+[0m21:23:28.325112 [debug] [Thread-1  ]: Compiling model.dbt_.fct_summary
+[0m21:23:28.360623 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.fct_summary"
+[0m21:23:28.369246 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:28.370807 [debug] [Thread-1  ]: Began executing node model.dbt_.fct_summary
+[0m21:23:28.412640 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.fct_summary"
+[0m21:23:28.414449 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_summary"
+[0m21:23:28.415328 [debug] [Thread-1  ]: On model.dbt_.fct_summary: BEGIN
+[0m21:23:28.416240 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:23:28.428577 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+[0m21:23:28.432485 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_summary"
+[0m21:23:28.437712 [debug] [Thread-1  ]: On model.dbt_.fct_summary: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_summary"} */
+
+
+  create  table "warehouse"."warehouse"."fct_summary__dbt_tmp"
+  as (
+    
+
+with source_data as (
+    select * from "source"
+),
+
+selection as (
+    select track_id, md5(types) as type_id, traveled_d, avg_speed from source_data
+),
+
+dim_types as (
+    select * from "warehouse"."warehouse"."dim_types"
+), 
+
+final as (
+    select sel.track_id, dim_types.types, sel.traveled_d, sel.avg_speed
+    from selection as sel 
+    LEFT JOIN dim_types on sel.type_id = dim_types.Id
+)
+
+select * from final
+  );
+[0m21:23:28.496231 [debug] [Thread-1  ]: SQL status: SELECT 922 in 0.05 seconds
+[0m21:23:28.513704 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_summary"
+[0m21:23:28.515856 [debug] [Thread-1  ]: On model.dbt_.fct_summary: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_summary"} */
+alter table "warehouse"."warehouse"."fct_summary__dbt_tmp" rename to "fct_summary"
+[0m21:23:28.521670 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:23:28.535946 [debug] [Thread-1  ]: On model.dbt_.fct_summary: COMMIT
+[0m21:23:28.540005 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_summary"
+[0m21:23:28.542571 [debug] [Thread-1  ]: On model.dbt_.fct_summary: COMMIT
+[0m21:23:28.568195 [debug] [Thread-1  ]: SQL status: COMMIT in 0.02 seconds
+[0m21:23:28.582361 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_summary"
+[0m21:23:28.588404 [debug] [Thread-1  ]: On model.dbt_.fct_summary: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_summary"} */
+drop table if exists "warehouse"."warehouse"."fct_summary__dbt_backup" cascade
+[0m21:23:28.593744 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m21:23:28.606960 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:28.611453 [debug] [Thread-1  ]: On model.dbt_.fct_summary: Close
+[0m21:23:28.616634 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39402ec6d0>]}
+[0m21:23:28.624675 [info ] [Thread-1  ]: 3 of 5 OK created table model warehouse.fct_summary ............................ [[32mSELECT 922[0m in 0.31s]
+[0m21:23:28.629119 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_summary
+[0m21:23:28.635865 [debug] [Thread-1  ]: Began running node model.dbt_.fct_trajectory
+[0m21:23:28.645892 [info ] [Thread-1  ]: 4 of 5 START table model warehouse.fct_trajectory .............................. [RUN]
+[0m21:23:28.649787 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.fct_trajectory"
+[0m21:23:28.673168 [debug] [Thread-1  ]: Began compiling node model.dbt_.fct_trajectory
+[0m21:23:28.692417 [debug] [Thread-1  ]: Compiling model.dbt_.fct_trajectory
+[0m21:23:28.771084 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.fct_trajectory"
+[0m21:23:28.776133 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:28.777142 [debug] [Thread-1  ]: Began executing node model.dbt_.fct_trajectory
+[0m21:23:28.823481 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.fct_trajectory"
+[0m21:23:28.845351 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_trajectory"
+[0m21:23:28.846379 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: BEGIN
+[0m21:23:28.847215 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:23:28.865049 [debug] [Thread-1  ]: SQL status: BEGIN in 0.02 seconds
+[0m21:23:28.866640 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_trajectory"
+[0m21:23:28.867599 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_trajectory"} */
+
+
+  create  table "warehouse"."warehouse"."fct_trajectory__dbt_tmp"
+  as (
+    
+
+with source_data as (
+    select * from "source"
+),
+
+selection as (
+    select track_id, md5(types) as type_id, trajectory from source_data
+),
+
+dim_types as (
+    select * from "warehouse"."warehouse"."dim_types"
+), 
+
+final as (
+    select sel.track_id, dim_types.types, sel.trajectory as paths
+    from selection as sel 
+    LEFT JOIN dim_types on sel.type_id = dim_types.Id
+)
+
+select * from final
+  );
+[0m21:23:32.825530 [debug] [Thread-1  ]: SQL status: SELECT 922 in 3.95 seconds
+[0m21:23:32.838953 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_trajectory"
+[0m21:23:32.839837 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_trajectory"} */
+alter table "warehouse"."warehouse"."fct_trajectory__dbt_tmp" rename to "fct_trajectory"
+[0m21:23:32.841906 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:23:32.853719 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: COMMIT
+[0m21:23:32.854854 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_trajectory"
+[0m21:23:32.855741 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: COMMIT
+[0m21:23:33.154016 [debug] [Thread-1  ]: SQL status: COMMIT in 0.3 seconds
+[0m21:23:33.202160 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.fct_trajectory"
+[0m21:23:33.203228 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.fct_trajectory"} */
+drop table if exists "warehouse"."warehouse"."fct_trajectory__dbt_backup" cascade
+[0m21:23:33.205580 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m21:23:33.214894 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:33.217165 [debug] [Thread-1  ]: On model.dbt_.fct_trajectory: Close
+[0m21:23:33.221502 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39402a3130>]}
+[0m21:23:33.223392 [info ] [Thread-1  ]: 4 of 5 OK created table model warehouse.fct_trajectory ......................... [[32mSELECT 922[0m in 4.57s]
+[0m21:23:33.226582 [debug] [Thread-1  ]: Finished running node model.dbt_.fct_trajectory
+[0m21:23:33.227896 [debug] [Thread-1  ]: Began running node model.dbt_.my_second_dbt_model
+[0m21:23:33.230269 [info ] [Thread-1  ]: 5 of 5 START view model warehouse.my_second_dbt_model .......................... [RUN]
+[0m21:23:33.234343 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:23:33.235501 [debug] [Thread-1  ]: Began compiling node model.dbt_.my_second_dbt_model
+[0m21:23:33.237176 [debug] [Thread-1  ]: Compiling model.dbt_.my_second_dbt_model
+[0m21:23:33.268517 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:23:33.270384 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:33.271505 [debug] [Thread-1  ]: Began executing node model.dbt_.my_second_dbt_model
+[0m21:23:33.432436 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_.my_second_dbt_model"
+[0m21:23:33.445664 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:23:33.446583 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: BEGIN
+[0m21:23:33.447285 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:23:33.474718 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m21:23:33.475830 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:23:33.481598 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+
+  create view "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "warehouse"."warehouse"."my_first_dbt_model"
+where id = 1
+  );
+[0m21:23:33.489522 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.01 seconds
+[0m21:23:33.515545 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:23:33.516494 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+alter table "warehouse"."warehouse"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m21:23:33.520366 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:23:33.552479 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:23:33.553445 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:23:33.554179 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: COMMIT
+[0m21:23:33.732420 [debug] [Thread-1  ]: SQL status: COMMIT in 0.18 seconds
+[0m21:23:33.744282 [debug] [Thread-1  ]: Using postgres connection "model.dbt_.my_second_dbt_model"
+[0m21:23:33.745194 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.0", "profile_name": "dbt_", "target_name": "dev", "node_id": "model.dbt_.my_second_dbt_model"} */
+drop view if exists "warehouse"."warehouse"."my_second_dbt_model__dbt_backup" cascade
+[0m21:23:33.760606 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.01 seconds
+[0m21:23:33.768673 [debug] [Thread-1  ]: finished collecting timing info
+[0m21:23:33.769661 [debug] [Thread-1  ]: On model.dbt_.my_second_dbt_model: Close
+[0m21:23:33.782408 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a676c8f2-cadb-40cb-afcb-8120b89d9038', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39413f3100>]}
+[0m21:23:33.789584 [info ] [Thread-1  ]: 5 of 5 OK created view model warehouse.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 0.55s]
+[0m21:23:33.796892 [debug] [Thread-1  ]: Finished running node model.dbt_.my_second_dbt_model
+[0m21:23:33.802258 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:23:33.803483 [debug] [MainThread]: Using postgres connection "master"
+[0m21:23:33.824829 [debug] [MainThread]: On master: BEGIN
+[0m21:23:33.825889 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:23:33.851210 [debug] [MainThread]: SQL status: BEGIN in 0.03 seconds
+[0m21:23:33.852396 [debug] [MainThread]: On master: COMMIT
+[0m21:23:33.855166 [debug] [MainThread]: Using postgres connection "master"
+[0m21:23:33.857985 [debug] [MainThread]: On master: COMMIT
+[0m21:23:33.864385 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:23:33.868473 [debug] [MainThread]: On master: Close
+[0m21:23:33.873945 [info ] [MainThread]: 
+[0m21:23:33.885251 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 8.04 seconds (8.04s).
+[0m21:23:33.892634 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:23:33.895804 [debug] [MainThread]: Connection 'list_warehouse' was properly closed.
+[0m21:23:33.906055 [debug] [MainThread]: Connection 'model.dbt_.my_second_dbt_model' was properly closed.
+[0m21:23:33.958805 [info ] [MainThread]: 
+[0m21:23:33.967208 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:23:33.972469 [info ] [MainThread]: 
+[0m21:23:33.975525 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m21:23:33.981075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39418f2520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3941880e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f394183f610>]}

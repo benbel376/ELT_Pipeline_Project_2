@@ -6,6 +6,8 @@ name: 'dbt_'
 version: '1.0.0'
 config-version: 2
 
+log-path: dbt_logs
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'dbt_'
 
