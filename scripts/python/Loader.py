@@ -9,7 +9,7 @@ class Loader():
     def __init__(self):
         pass
         
-    def connect_to_server(self,host:str = "localhost", port:int=5432, user:str = "root", password:str="root", dbName:str="warehouse"):
+    def connect_to_server(self,host:str = "localhost", port:int=5432, user:str = "warehouse", password:str="warehouse", dbName:str="warehouse"):
         """
         A function that allows you to connect to SQL database
         Args:
@@ -30,24 +30,9 @@ class Loader():
                                 database=dbName,
                                 user=user,
                                 password=password)
+            cur = conn.cursor()
             print("successfully connected")
-            return conn
-        except Exception as e:
-            print(f"Error: {e}")
-
-
-    def create_db(self, cursor, dbName: str) -> None:
-        """
-        A function to create SQL database
-
-        Args:
-            cursor: cursor object
-            dbName: name of database
-        
-        Returns: None.
-        """
-        try:
-            print("database successfully created")
+            return conn, cur
         except Exception as e:
             print(f"Error: {e}")
 
@@ -77,8 +62,19 @@ class Loader():
 
         Returns: None
         """
-
-        print("table created successfully")
+        sqlFile = file_sql
+        fd = open(sqlFile, 'r')
+        readsqlFile = fd.read()
+        fd.close()
+        sqlCommands = readsqlFile.split(';')
+        for command in sqlCommands:
+            try:
+                result = cursor.execute(command)
+                print(f"table created successfully")
+            except Exception as e:
+                print('command skipped: ', command)
+                print(e)
+        
 
 
     def insert_into_table(self, cursor, connection, dbName: str, df: pd.DataFrame, table_name: str) -> None:
@@ -109,9 +105,4 @@ class Loader():
 
 
 if __name__=="__main__":
-    wr = Loader()
-    wr.createDB(dbName='DWH')
-    df = pd.read_csv("../data/extracted.csv")
-    df.drop(["Unnamed: 0"], axis=1, inplace=True)
-    wr.createTables(dbName='DWH')
-    wr.insert_into_warehouse(dbName = 'DWH', df = df, table_name='elt')
+    pass
