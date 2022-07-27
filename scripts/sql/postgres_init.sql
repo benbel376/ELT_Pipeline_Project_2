@@ -1,7 +1,27 @@
-CREATE USER test WITH PASSWORD 'test' CREATEDB;
-CREATE DATABASE test
+CREATE USER airflow WITH PASSWORD 'airflow' CREATEDB;
+CREATE DATABASE airflow
     WITH 
-    OWNER = test
+    OWNER = airflow
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.utf8'
+    LC_CTYPE = 'en_US.utf8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+CREATE USER warehouse WITH PASSWORD 'warehouse' CREATEDB;
+CREATE DATABASE warehouse
+    WITH 
+    OWNER = warehouse
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.utf8'
+    LC_CTYPE = 'en_US.utf8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+CREATE USER superset WITH PASSWORD 'superset' CREATEDB;
+CREATE DATABASE superset
+    WITH 
+    OWNER = superset
     ENCODING = 'UTF8'
     LC_COLLATE = 'en_US.utf8'
     LC_CTYPE = 'en_US.utf8'
