@@ -1,8 +1,6 @@
 import os
 import pandas as pd
-from mysql.connector import Error
 import psycopg2
-import mysql.connector as connector
 
 class Loader():
     
