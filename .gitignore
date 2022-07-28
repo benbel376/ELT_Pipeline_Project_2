@@ -1,1 +1,5 @@
-/superset_
+superset/*
+!superset/docker
+!superset/docker/*
+!superset/scripts
+!superset/scripts/*
