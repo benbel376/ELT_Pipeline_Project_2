@@ -1,0 +1,4 @@
+dbt-postgres
+werkzeug==0.15.4
+jinja2==2.10.2
+text-unidecode==1.2
