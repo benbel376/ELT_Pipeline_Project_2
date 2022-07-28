@@ -11,10 +11,9 @@ sources:
     tables:
       - name: source
 
-# models:
-#   - name: dim_types
-#     columns:
-#       - name: Id
-#         tests:
-#         tags: [dim_type_tests]
-#           - unique
+models:
+  - name: dim_types
+    columns:
+      - name: Id
+        tests:
+          - unique

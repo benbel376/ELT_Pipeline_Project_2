@@ -56,9 +56,14 @@ with DAG(dag_id="workflow",default_args=default_args,schedule_interval='@daily',
         task_id="dbt_run",
         bash_command=f"cd ~/dbt_ && ~/.local/bin/dbt run --profiles-dir {DBT_PROFILE_DIR}",
     )
+    dbt_test = BashOperator(
+        task_id="dbt_test",
+        bash_command=f"cd ~/dbt_ && ~/.local/bin/dbt test --profiles-dir {DBT_PROFILE_DIR}",
+    )
     dbt_doc = BashOperator(
         task_id="dbt_doc",
         bash_command=f"cd ~/dbt_ && ~/.local/bin/dbt docs generate --profiles-dir {DBT_PROFILE_DIR} && ~/.local/bin/dbt docs serve --port 7211 --profiles-dir {DBT_PROFILE_DIR}",
     )
 
-extract_task >> load_task >> dbt_run >> dbt_doc
+
+extract_task >> load_task >> dbt_run >> dbt_test >> dbt_doc
