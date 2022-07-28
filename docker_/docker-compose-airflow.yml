@@ -29,6 +29,8 @@ services:
       - ../airflow_/plugins:/opt/airflow/plugins
     ports:
       - "8087:8080"
+      - "7211:7211"
+      - "9921:9921"
     command: webserver
 
 networks: 

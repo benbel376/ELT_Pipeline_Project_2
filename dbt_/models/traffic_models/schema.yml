@@ -2,7 +2,19 @@ version: 2
 
 sources:
   - name: traffic_source
-    description: "traffic data storage"
-    database: "warehouse"
+    schema: "warehouse"
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+    loader: stitch
     tables:
       - name: source
+
+# models:
+#   - name: dim_types
+#     columns:
+#       - name: Id
+#         tests:
+#         tags: [dim_type_tests]
+#           - unique

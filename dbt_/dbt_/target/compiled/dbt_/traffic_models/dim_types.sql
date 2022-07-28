@@ -1,6 +1,6 @@
 
 with source_data as (
-    select * from "source"
+    select * from warehouse.warehouse.source
 ),
 
 final as (
