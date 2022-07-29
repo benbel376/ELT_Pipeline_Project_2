@@ -150,7 +150,7 @@ class Loader():
                 connection.commit()
             except Exception as e:
                 connection.rollback()
-                print('Error: ', e)
+                print(e)
         print('Data inserted successfully')
 
 
