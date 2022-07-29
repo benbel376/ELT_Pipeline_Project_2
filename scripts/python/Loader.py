@@ -1,5 +1,6 @@
 import os
-
+from mysql.connector import Error
+import mysql.connector as connector
 import pandas as pd
 import psycopg2
 
@@ -36,6 +37,55 @@ class Loader():
         except Exception as e:
             print(f"Error: {e}")
 
+
+    def connect_to_mysql_server(self,host:str, port:int, user:str, password:str, dbName:str=None):
+        """
+        A function that allows you to connect to SQL database
+        Args:
+            host: ip address or domain
+            user: the user of the server
+            password: the password to server
+            dbName: the name of the server
+
+        Returns:
+            connection: connection object
+            cursor: cursor object
+
+        """
+        try:
+            connection = connector.connect(host=host, user=user,
+                          password=password, ssl_disabled=True,
+                             database=dbName, port=port, buffered=True)
+            cursor = connection.cursor()
+
+            print("successfully connected")
+            
+            return connection, cursor
+        except Exception as e:
+            print(f"Error: {e}")
+
+
+    def load_from_source(self, cur, table, columns, limit, path):
+        """
+        Args:
+            cur: cursor to communicate with database.
+            limit: the number of rows to return
+        Returns:
+            result: iteratable object that holds all values of a query
+        """
+        try:
+            cols = (str(columns)).replace("]","").replace("[","").replace("\"", "").replace("'", "")
+            print(cols)
+            cur.execute(f"SELECT {cols} FROM {table} LIMIT {limit}")
+
+            result = cur.fetchall()
+            new_df2 = pd.DataFrame(result)
+            new_df2.columns = columns
+
+            new_df2.to_csv(path)
+            return new_df2
+        except Exception as e:
+            print(f"error: {e}")
 
 
     def close_connection(self, connection, cursor):

@@ -1,7 +1,10 @@
 from datetime import datetime, timedelta
 import airflow
 from airflow import DAG
-from custom import MySqlToPostgreOperator
+import sys
+import os
+sys.path.append(os.path.abspath("includes/python"))
+from Migrator import MySqlToPostgreOperator
 
 dag = DAG(
     dag_id="job_trial_user",
@@ -12,10 +15,8 @@ dag = DAG(
 
 start = MySqlToPostgreOperator(
     task_id=f"start",
-    sql="select * from user " 
-    "where created_at BETWEEN '{start_date}' "
-    "AND '{end_date}'",
-    target_table='public.user',
-    identifier='id',
+    sql="select * from warehouse.source",
+    target_table='warehouse.source',
+    identifier='track_id',
     dag=dag,
 )
