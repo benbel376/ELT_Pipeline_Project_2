@@ -1,0 +1,17 @@
+services:
+  mysql:
+      image: mysql:5.7.27
+      environment:
+        - MYSQL_ROOT_PASSWORD=mysql
+        - MYSQL_DATABASE=mysql
+        - MYSQL_USER=mysql
+        - MYSQL_PASSWORD=mysql
+      volumes:
+          - ../data:/var/lib/mysql-files/
+      ports:
+          - "42060:3306"
+
+networks: 
+  default: 
+    external: 
+      name: local_network_1
