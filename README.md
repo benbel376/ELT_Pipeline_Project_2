@@ -5,17 +5,14 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
+![image](https://user-images.githubusercontent.com/44437166/181994412-9c3c82d1-02e3-44ac-8708-e6d7617ecf3d.png)
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/eandualem/sensor_data_elt">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/benbel376/ELT_Pipeline_Project_2">
   </a>
-
-  <h3 align="center">Sensor Data ELT</h3>
-
+  <h1 align="center">ELT Pipeline Project 2</h1>
   <p align="center">
     A fully dockerized ELT pipeline using MySQL, PostgreSQL, Airflow, DBT, Redash and Superset.
     <br />
@@ -50,7 +47,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -147,12 +143,6 @@ DBT is used for cleaning and transforming the data in the warehouses.
 - navigate to `localhost:8088` to access Airflow 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/eandualem/sensor_data_elt/issues) for a list of proposed features (and known issues).
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -177,9 +167,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Elias Andualem - eandualem@gmail.com
+Biniyam Belayneh - biniyambelayneh376@gmail.com
 
-Project Link: [https://github.com/eandualem/sensor_data_elt](https://github.com/eandualem/sensor_data_elt)
+Project Link: [https://github.com/benbel376/ELT_Pipeline_Project_2](https://github.com/benbel376/ELT_Pipeline_Project_2)
 
 
 
@@ -191,17 +181,16 @@ Project Link: [https://github.com/eandualem/sensor_data_elt](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/eandualem/sensor_data_elt.svg?style=for-the-badge
-[contributors-url]: https://github.com/eandualem/sensor_data_elt/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/eandualem/sensor_data_elt.svg?style=for-the-badge
-[forks-url]: https://github.com/eandualem/sensor_data_elt/network/members
-[stars-shield]: https://img.shields.io/github/stars/eandualem/sensor_data_elt.svg?style=for-the-badge
-[stars-url]: https://github.com/eandualem/sensor_data_elt/stargazers
-[issues-shield]: https://img.shields.io/github/issues/eandualem/sensor_data_elt.svg?style=for-the-badge
-[issues-url]: https://github.com/eandualem/sensor_data_elt/issues
-[license-shield]: https://img.shields.io/github/license/eandualem/sensor_data_elt.svg?style=for-the-badge
-[license-url]: https://github.com/eandualem/sensor_data_elt/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/benbel376/ELT_Pipeline_Project_2.svg?style=for-the-badge
+[contributors-url]: https://github.com/benbel376/ELT_Pipeline_Project_2/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/benbel376/ELT_Pipeline_Project_2.svg?style=for-the-badge
+[forks-url]: https://github.com/benbel376/ELT_Pipeline_Project_2/network/members
+[stars-shield]: https://img.shields.io/github/stars/benbel376/ELT_Pipeline_Project_2.svg?style=for-the-badge
+[stars-url]: https://github.com/benbel376/ELT_Pipeline_Project_2/stargazers
+[issues-shield]: https://img.shields.io/github/issues/benbel376/ELT_Pipeline_Project_2.svg?style=for-the-badge
+[issues-url]: https://github.com/benbel376/ELT_Pipeline_Project_2/issues
+[license-shield]: https://img.shields.io/github/license/benbel376/ELT_Pipeline_Project_2.svg?style=for-the-badge
+[license-url]: https://github.com/benbel376/ELT_Pipeline_Project_2/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/elias-andualem-94a9a7195/
-[product-screenshot]: images/architecture.png
+[linkedin-url]: https://www.linkedin.com/in/biniyam-belayneh-demisse-42909617a//
 
