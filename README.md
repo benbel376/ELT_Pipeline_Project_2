@@ -20,9 +20,9 @@
     <br />
     <br />
     ·
-    <a href="https://github.com/eandualem/sensor_data_elt/issues">Report Bug</a>
+    <a href="https://github.com/benbel376/ELT_Pipeline_Project_2/issues">Report Bug</a>
     ·
-    <a href="https://github.com/eandualem/sensor_data_elt/issues">Request Feature</a>
+    <a href="https://github.com/benbel376/ELT_Pipeline_Project_2/issues">Request Feature</a>
     .
   </p>
 </p>
@@ -87,7 +87,7 @@ Make sure you have docker installed on local machine.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/eandualem/sensor_data_elt
+   git clone https://github.com/benbel376/ELT_Pipeline_Project_2
    ```
 2. Datawarehouse
    ```sh
