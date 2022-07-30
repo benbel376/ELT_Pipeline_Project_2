@@ -65,7 +65,7 @@ class Loader():
             print(f"Error: {e}")
 
 
-    def load_from_source(self, cur, table, columns, limit, path):
+    def load_from_source(self, conn, table, limit, path):
         """
         Args:
             cur: cursor to communicate with database.
@@ -74,16 +74,11 @@ class Loader():
             result: iteratable object that holds all values of a query
         """
         try:
-            cols = (str(columns)).replace("]","").replace("[","").replace("\"", "").replace("'", "")
-            print(cols)
-            cur.execute(f"SELECT {cols} FROM {table} LIMIT {limit}")
+            query = 'select * from {table} limit {limit}'
+            results = pd.read_sql_query(query, conn)
 
-            result = cur.fetchall()
-            new_df2 = pd.DataFrame(result)
-            new_df2.columns = columns
-
-            new_df2.to_csv(path)
-            return new_df2
+            results.to_csv(path)
+            return results
         except Exception as e:
             print(f"error: {e}")
 
