@@ -1,15 +1,5 @@
 version: '3.7'
 
-# x-redash-service: &redash-service
-#   image: redash/redash:latest
-#   links:
-#     - mysql:mysql
-#   depends_on:
-#     - postgres
-#     - redis
-#   env_file: redash.env
-#   restart: always
-
 services:
 
   airflow:

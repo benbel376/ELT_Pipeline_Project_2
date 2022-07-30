@@ -27,3 +27,13 @@ CREATE DATABASE superset
     LC_CTYPE = 'en_US.utf8'
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;
+
+CREATE USER redash WITH PASSWORD 'redash' CREATEDB;
+CREATE DATABASE redash
+    WITH 
+    OWNER = redash
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.utf8'
+    LC_CTYPE = 'en_US.utf8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
