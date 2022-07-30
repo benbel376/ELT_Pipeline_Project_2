@@ -1,3 +1,12 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -54,6 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 The objective of this project was to migrate an ELT pipeline developed for the week 11 challenge using(MYSQL, DBT, Apache Airflow, and Redash) to a more scalable and robust ELT pipeline. This was accomplished by changing the two main components, namely the MySQL data warehouse to Postgres and the Redash dashboard to Superset.
 
 ### Built With
@@ -97,7 +107,7 @@ Make sure you have docker installed on local machine.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### pgAdmin: 
+### Adminer: 
 Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP. Used to access MYSQL and Postgres Databases.
 - MYSQL:
    ```sh
@@ -137,6 +147,25 @@ DBT is used for cleaning and transforming the data in the warehouses.
 - navigate to `localhost:8088` to access Airflow 
 
 
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/eandualem/sensor_data_elt/issues) for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
 
 <!-- LICENSE -->
 ## License
@@ -159,4 +188,20 @@ Project Link: [https://github.com/eandualem/sensor_data_elt](https://github.com/
 * [10 Academy](https://www.10academy.org/)
 
 
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/eandualem/sensor_data_elt.svg?style=for-the-badge
+[contributors-url]: https://github.com/eandualem/sensor_data_elt/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/eandualem/sensor_data_elt.svg?style=for-the-badge
+[forks-url]: https://github.com/eandualem/sensor_data_elt/network/members
+[stars-shield]: https://img.shields.io/github/stars/eandualem/sensor_data_elt.svg?style=for-the-badge
+[stars-url]: https://github.com/eandualem/sensor_data_elt/stargazers
+[issues-shield]: https://img.shields.io/github/issues/eandualem/sensor_data_elt.svg?style=for-the-badge
+[issues-url]: https://github.com/eandualem/sensor_data_elt/issues
+[license-shield]: https://img.shields.io/github/license/eandualem/sensor_data_elt.svg?style=for-the-badge
+[license-url]: https://github.com/eandualem/sensor_data_elt/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/elias-andualem-94a9a7195/
+[product-screenshot]: images/architecture.png
 

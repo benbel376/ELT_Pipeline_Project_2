@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: traffic_source
+  - name: traffic_source_table
     schema: "warehouse"
     quoting:
       database: false
