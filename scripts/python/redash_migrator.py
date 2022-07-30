@@ -22,7 +22,7 @@ def save_queries(queries):
             )
             f.write(content)
 
-def export_queries(**kwargs):
+def get_queries(**kwargs):
     redash_url = kwargs['redash_url']
     api_key = kwargs['api_key']
 
