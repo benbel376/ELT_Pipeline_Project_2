@@ -4,7 +4,8 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-![image](https://user-images.githubusercontent.com/44437166/183882188-001902e3-1054-4dc0-871b-c778a6c7499c.png)
+
+
 
 ![image](https://user-images.githubusercontent.com/44437166/181994412-9c3c82d1-02e3-44ac-8708-e6d7617ecf3d.png)
 
@@ -73,7 +74,53 @@ Tech Stack used in this project
 * [Redash](https://laravel.com)
 * [Superset](https://superset.apache.org/)
 
-
+├── airflow
+│    ├── dags
+│    │   └── workflow.py
+│    ├── logs
+│    │   └── test
+│    └── plugins
+│        └── test    ```
+├── data
+│   ├── extracted_features.csv
+│   └── ...
+├── dbt
+│   ├── models
+│   │   └── adludio_models
+│   │       ├── schema.yml
+│   │       └── trans_join.sql
+├── docker
+│   ├── docker-compose-airflow.yml
+│   ├── docker-compose-postgres.yml
+│   ├── docker-compose-redash.yml
+│   └── dockerfiles
+│       ├── airflow
+│       │   ├── dockerfile
+│       │   └── requirements.txt
+│       └── postgres
+│           └── dockerfile
+├── models
+├── notebooks
+│   ├── EDA.ipynb
+│   ├── experiment.ipynb
+│   ├── feature_extraction.ipynb
+│   ├── mlruns
+│   │   └── ...
+│   └── modeling.ipynb
+├── scripts
+│   ├── python
+│   │   ├── connection_manager.py
+│   │   ├── feature_extractor.py
+│   │   ├── ingest_global.py
+│   │   ├── modeling_utils.py
+│   └── sql
+│       ├── clean_data.sql
+│       ├── extraction.sql
+│       ├── ingestion.sql
+│       ├── loading.sql
+│       ├── postgres_init.sql
+│       └── redash_visuals.sql
+└── setup.sh
 
 <!-- GETTING STARTED -->
 ## Getting Started
