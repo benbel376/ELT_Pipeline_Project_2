@@ -5,6 +5,8 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+![image](https://user-images.githubusercontent.com/44437166/183892133-0f3fa22f-8258-4477-a34b-87b5718455b3.png)
+![image](https://user-images.githubusercontent.com/44437166/183892232-53f7e0e5-0bcb-4f54-bc0e-5d8c76248af0.png)
 
 
 ![image](https://user-images.githubusercontent.com/44437166/181994412-9c3c82d1-02e3-44ac-8708-e6d7617ecf3d.png)
